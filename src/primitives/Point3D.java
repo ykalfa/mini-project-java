@@ -96,18 +96,22 @@ public class Point3D extends Point2D {
      * if it where to start from this point.
      * @param vector Vector to add To this class Point
      */
-    public void add(Vector vector) {
-        _x=_x.add(vector.getHead()._x);
-        _y=_y.add(vector.getHead()._y);
-        _z=_z.add(vector.getHead()._z);
+    public Point3D add(Vector vector) {
+      Point3D tmp = new Point3D();
+        tmp._x=_x.add(vector.getHead()._x);
+        tmp._y=_y.add(vector.getHead()._y);
+        tmp._z=_z.add(vector.getHead()._z);
+        return tmp;
     }
-    //------------------------------
-   public void add(Point3D point)
+    //----------------ייתכן שזה מיותר--------------
+/*   public Point3D add(Point3D point)
    {
-       this._x.add(point._x);
-       this._y.add(point._y);
-       this._z.add(point._z);
-   }
+       Point3D tmp= new Point3D();
+       tmp._x.add(point._x);
+       tmp._y.add(point._y);
+       tmp._z.add(point._z);
+       return tmp;
+}*/
 //-----------------------------------*/
     /**
      * Substract Vector From Point
@@ -115,15 +119,13 @@ public class Point3D extends Point2D {
      * if the vector head where to end at the class point
      * @param point Vector to substract
      */
-    public void subtract(Point3D point) {
-        this._x.subtract(point._x);
-        this._y.subtract(point._y);
-        this._z.subtract(point._z);
-    }
-    public void subtract(Vector point3D) {
-        _x = this._x.subtract(point3D.getHead()._x);
-        _y =this._y.subtract(point3D.getHead()._y);
-        _z =this._z.subtract(point3D.getHead()._z);
+    public Vector subtract(Point3D point)
+    {
+        Vector tmp = new Vector(this);
+        tmp.getHead()._x.subtract(point._x);
+        tmp.getHead()._y.subtract(point._y);
+        tmp.getHead()._z.subtract(point._z);
+        return tmp;
     }
 
 
@@ -135,7 +137,7 @@ public class Point3D extends Point2D {
      */
     public double distance(Point3D vector) {
         Point3D point3d = new Point3D(this);
-        point3d.subtract(new Vector(vector));
+       point3d.subtract(new Point3D(vector));
         return Math.sqrt(Math.pow(point3d._x.getCoordinate(), 2) + Math.pow(point3d._y.getCoordinate(), 2) + Math.pow(point3d._z.getCoordinate(), 2));
     }
 }

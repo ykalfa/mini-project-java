@@ -118,14 +118,11 @@ public class Vector implements Comparable<Vector> {
      (3,3,3).substract((2,2,2))=>(1,1,1).
      @param vector Vector To sustract
      */
-    public void subtract(Point3D vector) {
-        _head.subtract(vector);
-    }
-  /*  public Vector substract(Vector vector){
-        return new Vector(_head.subtract(vector._head));
-    }*/
-    public void subtract(Vector vector) {
-        _head.subtract(vector);
+
+    public Vector subtract(Vector vector)
+    {
+        Vector tmp = new Vector(this);
+        return tmp._head.subtract(vector._head);
     }
     /**
      Scaling Vector For Given Factor
