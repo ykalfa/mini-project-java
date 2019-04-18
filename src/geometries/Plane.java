@@ -28,7 +28,7 @@ public class Plane extends Geometry implements FlatGeometry
     }
     /**
      * Copy constractor
-     * Copy from given Plane object to this Clas Plane
+     * Copy from given Plane object to this Class Plane
      *
      * @param plane Plane To Copy From
      */
@@ -107,20 +107,26 @@ public class Plane extends Geometry implements FlatGeometry
     @Override
     public List<Point3D> FindIntersections(Ray ray)
     {
-        Vector p2rVector=new Vector(_Q,ray.getPOO());
+        /** ray.getPoo() = P0
+         * _Q = Q0
+         * p2rVector = P0-Q0
+         *  ray.getDirection() = V
+         *  _normal = N
+         */
+        Vector p2rVector=new Vector(_Q,ray.getPOO()); // P0-Q0
         ArrayList<Point3D> ansList=new ArrayList();//
         //if the ray has the same direction as the plane so we dont have intersections
-        if(_normal.dotProduct(ray.getDirection())==0)
-            return ansList;
-        double t=-(_normal.dotProduct(p2rVector)/(_normal.dotProduct(ray.getDirection())));
-        Vector copyDirection=new Vector(ray.getDirection());
-        copyDirection.scale(t);
+        if(_normal.dotProduct(ray.getDirection())==0) // if the vector is 90' to the plane so we not have a intersection
+            return ansList; //return empty list
+        double t=-(_normal.dotProduct(p2rVector)/(_normal.dotProduct(ray.getDirection())));   //   -N * (P0-Q0)/(N*V)
+        Vector copyDirection=new Vector(ray.getDirection()); // copy of V
+        copyDirection.scale(t); // t*V
         p2rVector.setHead(ray.getPOO());
-        p2rVector.add(copyDirection);
+        p2rVector.add(copyDirection); //p2rVector start from P0 , and we add to him t*V , and we get P. (the cut point with the plane)
         Point3D ans= new Point3D(p2rVector.getHead());
         if(t<0)
             return new ArrayList<>();
-        ansList.add(ans);
+        ansList.add(ans); // add P to ansList (ArrayList of the cut point with the plane)
         return ansList;
     }
 }

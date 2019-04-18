@@ -11,6 +11,7 @@ import primitives.*;
  *
  * @author מיכאל
  */
+//need to extend from plane ???
 public class Triangle extends Geometry implements FlatGeometry {
 
     //class variables representing the 3 points of triangle//
@@ -140,12 +141,14 @@ public class Triangle extends Geometry implements FlatGeometry {
     @Override
     public List<Point3D> FindIntersections(Ray ray) {
 
-        if (getNormal(_p2).length() == 0) {
+        if (getNormal(_p2).length() == 0)
+        {
             return new ArrayList();
         }
-        Plane intersectionHelp = new Plane(getNormal(_p2), _p2);
+        Plane intersectionHelp = new Plane(getNormal(_p2), _p2); // send to plane normal and _p2
         ArrayList<Point3D> ans = (ArrayList<Point3D>) (intersectionHelp.FindIntersections(ray));
-        if (ans.isEmpty()) {
+        if (ans.isEmpty())
+        {
             return new ArrayList<>();
         }
 
@@ -154,24 +157,27 @@ public class Triangle extends Geometry implements FlatGeometry {
         Vector n1 = new Vector(ray.getPOO(), _p1).crossProduct(new Vector(ray.getPOO(), _p2));
         Vector n2 = new Vector(ray.getPOO(), _p2).crossProduct(new Vector(ray.getPOO(), _p3));
         Vector n3 = new Vector(ray.getPOO(), _p3).crossProduct(new Vector(ray.getPOO(), _p1));
-        try {
+        try
+        {
             n1.normalize();
             n2.normalize();
             n3.normalize();
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             return new ArrayList();
         }
 
-        double d1 = (new Vector(intersectionPoint3D, ray.getPOO())).dotProduct(n1);
-        double d2 = (new Vector(intersectionPoint3D, ray.getPOO())).dotProduct(n2);
-        double d3 = (new Vector(intersectionPoint3D, ray.getPOO())).dotProduct(n3);
+        double d1 = (new Vector(intersectionPoint3D, ray.getPOO())).dotProduct(n1); // ray.getPoo() = P0 , n1 = p
+        double d2 = (new Vector(intersectionPoint3D, ray.getPOO())).dotProduct(n2); // ray.getPoo() = P0 , n2 = p
+        double d3 = (new Vector(intersectionPoint3D, ray.getPOO())).dotProduct(n3); // ray.getPoo() = P0 , n3 = p
 
-        if (!((d1 > 0 && d2 > 0 && d3 > 0) || (d1 < 0 && d2 < 0 && d3 < 0))) {
+        if (!((d1 > 0 && d2 > 0 && d3 > 0) || (d1 < 0 && d2 < 0 && d3 < 0))) // if all of the d are with the same sign add them to the list
+        {
             ans = new ArrayList();
         }
-
+////TODO maybe we need to add the cut poitn to ans ? or just return ans ?
         return ans;
-
     }
     /**
      * Return noramal Vector Of Triangle.
@@ -179,17 +185,20 @@ public class Triangle extends Geometry implements FlatGeometry {
      * @param point Point To Find Normal
      * @return Vector represent the Normal in the Given Point
      */
-    @Override
-    public Vector getNormal(Point3D point) {
+       @Override
+    public Vector getNormal(Point3D point)
+       {
+         Vector normalVector = (new Vector(_p2, _p1).crossProduct(new Vector(_p2, _p3))); // p2_p1 X p2_p3 = normalVector
+         try
+         {
+             normalVector.normalize();
+             normalVector.scale(-1);
+         }
+         catch (ArithmeticException e)
+         {
 
-        Vector normalVector = (new Vector(_p2, _p1).crossProduct(new Vector(_p2, _p3)));
-        try {
-            normalVector.normalize();
-            normalVector.scale(-1);
-        } catch (ArithmeticException e) {
-
-        }
-        return normalVector;
-    }
+         }
+         return normalVector;
+       }
 
 }

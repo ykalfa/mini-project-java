@@ -100,9 +100,9 @@ public class Sphere extends RadialGeometry
     @Override
     public List<Point3D> FindIntersections(Ray ray)
     {
-        Vector lVector=new Vector( ray.getPOO(),_center);
+        Vector lVector=new Vector( ray.getPOO(),_center); // P0 - _center  = L = lvector
         try{
-            ray.getDirection().normalize();
+            ray.getDirection().normalize(); // V
         }
         catch(ArithmeticException e)
         {
@@ -113,10 +113,10 @@ public class Sphere extends RadialGeometry
         ArrayList<Point3D> ans=new ArrayList();
         if(d>_radius)
             return ans;
-        double th=Math.sqrt(Math.pow(_radius, 2)-Math.pow(d, 2));
+        double th=Math.sqrt(Math.pow(_radius, 2)-Math.pow(d, 2)); //
         Vector vectorToAdd=new Vector(ray.getDirection());
-        double t1=tm-th;
-        double t2=tm+th;
+        double t1=tm-th; // t1 = p1
+        double t2=tm+th;//t2 = p2
         Point3D p1=new Point3D(ray.getPOO());
         if(t1>0)
         {
