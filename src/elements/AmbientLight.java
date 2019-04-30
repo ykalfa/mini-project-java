@@ -10,8 +10,6 @@ import java.awt.Color;
  * Class Represents Ambient Light
  * Has 1 double (0-1) Parameter
  * That defines the intensity of this light should have.
- *
- * @author מיכאל
  */
 
 public class AmbientLight extends Light

@@ -11,8 +11,6 @@ import primitives.*;
  * The Class Camera Represent real-life camera.
  * Defined By Point that represents the camera location in 3D
  * And 2 Directional Vectors representing the direction the camera looking to.
- *
- * @author מיכאל
  */
 public class Camera {
     //Eye point of the camera
@@ -21,7 +19,7 @@ public class Camera {
     private Vector _vUp;    // Vector representing the Up direction of the camera
     private Vector _vTo;    // Vector representing the To direction of the camera
 
-    //Should be calculated as the cross product if vUp and vTo
+    //Should be calculated as the cross product of vUp and vTo
     private Vector _vRight;
 // ***************** Constructors ********************** //
 
