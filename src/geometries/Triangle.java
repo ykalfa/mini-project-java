@@ -188,7 +188,12 @@ public class Triangle extends Geometry implements FlatGeometry {
        @Override
     public Vector getNormal(Point3D point)
        {
-         Vector normalVector = (new Vector(_p2, _p1).crossProduct(new Vector(_p2, _p3))); // p2_p1 X p2_p3 = normalVector
+           Vector v1 = new Vector(_p2,_p1);//
+           Vector v2 = new Vector (_p2,_p3);//
+           Vector normalVector = v1.crossProduct(v2);
+
+
+         //Vector normalVector = (new Vector(_p2, _p1).crossProduct(new Vector(_p2, _p3))); // p2_p1 X p2_p3 = normalVector
          try
          {
              normalVector.normalize();

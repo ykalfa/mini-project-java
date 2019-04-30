@@ -1,5 +1,5 @@
 
-package primitives.Tests;
+package primitives.test;
 
 import org.junit.Test;
 import primitives.Coordinate;

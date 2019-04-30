@@ -59,7 +59,10 @@ public class Vector implements Comparable<Vector> {
      */
     public Vector(Point3D p1, Point3D p2) {
         _head = new Point3D(p2);
-        _head.subtract(new Point3D(p1));
+        _head.setX( _head.getX().subtract(p1.getX()));
+        _head.setY(_head.getY().subtract(p1.getY()));
+        _head.setZ( _head.getZ().subtract(p1.getZ()));
+
     }
     // ***************** Getters/Setters ********************** //
 
@@ -144,12 +147,15 @@ public class Vector implements Comparable<Vector> {
      */
     public Vector crossProduct(Vector vector) {
         Vector v = new Vector();
-        v._head.setX(new Coordinate(_head.getY().getCoordinate() * vector._head.getZ().getCoordinate() - _head.getZ().getCoordinate() * vector._head.getY().getCoordinate()));
-        v._head.setY(new Coordinate(_head.getZ().getCoordinate() * vector._head.getX().getCoordinate() - _head.getX().getCoordinate() * vector._head.getZ().getCoordinate()));
-        v._head.setZ(new Coordinate(_head.getX().getCoordinate() * vector._head.getY().getCoordinate() - _head.getY().getCoordinate() * vector._head.getX().getCoordinate()));
 
-        return v;
+        v._head._x = (new Coordinate(_head.getY().getCoordinate() * vector._head.getZ().getCoordinate() - (_head.getZ().getCoordinate() * vector._head.getY().getCoordinate())));
+        v._head._y = (new Coordinate(_head.getZ().getCoordinate() * vector._head.getX().getCoordinate() - _head.getX().getCoordinate() * vector._head.getZ().getCoordinate()));
+        v._head._z =(new Coordinate(_head.getX().getCoordinate() * vector._head.getY().getCoordinate() - _head.getY().getCoordinate() * vector._head.getX().getCoordinate()));
+            return v;
     }
+
+
+
 
     /**
      Calculate the legth of the Vector

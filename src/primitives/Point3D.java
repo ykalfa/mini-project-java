@@ -122,9 +122,9 @@ public class Point3D extends Point2D {
     public Vector subtract(Point3D point)
     {
         Vector tmp = new Vector(this);
-        tmp.getHead()._x.subtract(point._x);
-        tmp.getHead()._y.subtract(point._y);
-        tmp.getHead()._z.subtract(point._z);
+        tmp.getHead()._x = tmp.getHead()._x.subtract(point._x);
+        tmp.getHead()._y =tmp.getHead()._y.subtract(point._y);
+        tmp.getHead()._z =tmp.getHead()._z.subtract(point._z);
         return tmp;
     }
 

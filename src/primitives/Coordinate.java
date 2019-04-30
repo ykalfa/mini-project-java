@@ -78,4 +78,5 @@ public class Coordinate implements Comparable<Coordinate>
     public Coordinate subtract(Coordinate other) {
         return new Coordinate(usubtract(this._coordinate, other._coordinate));
     }
+
 }

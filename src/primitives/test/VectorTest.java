@@ -1,5 +1,5 @@
 
-package primitives.Tests;
+package primitives.test;
 
 import org.junit.Test;
 import primitives.Point3D;
@@ -116,6 +116,21 @@ public class VectorTest {
         assertTrue(Double.compare(v1.dotProduct(v2), (8.75 + -35 + 5)) == 0);
 
     }
+   @Test
+    public void Test112(){
+        System.out.println("Test09: Vector cross product test");
+
+
+        Vector v1 = new Vector(1.0,-2.0,0.0);
+        Vector v2 = new Vector(-2.0,0.0,0.0);
+        Vector v3 = v1.crossProduct(v2);
+       System.out.println(v3);
+       assertEquals((new Vector (0,0,-4)),v3);
+
+    }
+
+   //TODO - cross product not work , return -1.
+
 
     @Test
     public void Test10() {
