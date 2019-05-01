@@ -4,7 +4,11 @@ import geometries.Plane;
 import geometries.Sphere;
 import geometries.Triangle;
 import junit.framework.TestCase;
+import java.awt.Color;
 
+import scene.*;
+import renderer.*;
+import geometries.*;
 import elements.Camera;
 import java.util.List;
 import org.junit.Test;
@@ -277,11 +281,52 @@ public class TriangleTest {
         for (Point3D iPoint: intersectionPointsPlane2)
             System.out.println(iPoint);
     }
+        @Test
+        public void emmissionTest()
+        {
+            Scene scene = new Scene();
+            scene.setScreenDistance(50);
+
+            Sphere sphere = new Sphere(50, new Point3D(0.0, 0.0, -50));
+            Triangle triangle1 = new Triangle(new Point3D( 150, 0, -50),
+                    new Point3D(  0, 150, -50),
+                    new Point3D( 150, 150, -50));
+
+            Triangle triangle2 = new Triangle(new Point3D( 150, 0, -50),
+                    new Point3D(  0, -150, -50),
+                    new Point3D( 150,-150, -50));
+
+            Triangle triangle3 = new Triangle(new Point3D(-150, 0, -50),
+                    new Point3D(  0, 150, -50),
+                    new Point3D(-150, 150, -50));
+
+            Triangle triangle4 = new Triangle(new Point3D(-150, 0, -50),
+                    new Point3D(  0,  -150, -50),
+                    new Point3D(-150, -150, -50));
+
+            sphere.setEmmission(new Color (255, 255, 255));
+            triangle1.setEmmission(new Color (255, 255, 255));
+            triangle2.setEmmission(new Color (255, 255, 255));
+            triangle3.setEmmission(new Color (255, 255, 255));
+            triangle4.setEmmission(new Color (255, 255, 255));
+
+            scene.addGeometry(sphere);
+            scene.addGeometry(triangle1);
+            scene.addGeometry(triangle2);
+            scene.addGeometry(triangle3);
+            scene.addGeometry(triangle4);
+
+            ImageWriter imageWriter = new ImageWriter("Emmission test", 500, 500, 500, 500);
+
+            Render render = new Render(imageWriter, scene);
+
+            render.renderImage();
+            render.printGrid(50);
+            render.writeToImage();
+        }
 
 
-
-
-    /*@Test
+/*@Test
     public void TriangleIntersectionPointsTest() {
         final int WIDTH = 3;
         final int HEIGHT = 3;
