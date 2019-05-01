@@ -9,7 +9,6 @@ import primitives.*;
  * Class Represents Plane In 3D
  * Definded By Normal of Plane and Point on the Plane.
  *
- * @author מיכאל
  */
 public class Plane extends Geometry implements FlatGeometry
 {

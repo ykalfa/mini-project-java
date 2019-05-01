@@ -10,7 +10,6 @@ import primitives.Vector;
  * Class Represents Radial Geometries (That has radius)
  * has a Proprety of Rdius length.
  *
- * @author מיכאל
  */
 public abstract class RadialGeometry extends Geometry
 {

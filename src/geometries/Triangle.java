@@ -9,7 +9,6 @@ import primitives.*;
  * Class Represents Triangle
  * Defined By 3 Points in 3D
  *
- * @author מיכאל
  */
 //need to extend from plane ???
 public class Triangle extends Geometry implements FlatGeometry {
