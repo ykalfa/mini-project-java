@@ -133,9 +133,9 @@ public class Vector implements Comparable<Vector> {
      @param scalingFactor double represents factor to scale vector
      */
     public void scale(double scalingFactor) {
-        this._head.setX(new Coordinate(_head.getX().getCoordinate() * scalingFactor));
-        this._head.setY(new Coordinate(_head.getY().getCoordinate() * scalingFactor));
-        this._head.setZ(new Coordinate(_head.getZ().getCoordinate() * scalingFactor));
+        this._head.setX(new Coordinate(_head.getX().getCoordinate() * scalingFactor+0.0));
+        this._head.setY(new Coordinate(_head.getY().getCoordinate() * scalingFactor+0.0));
+        this._head.setZ(new Coordinate(_head.getZ().getCoordinate() * scalingFactor+0.0));
 
     }
 
@@ -148,9 +148,9 @@ public class Vector implements Comparable<Vector> {
     public Vector crossProduct(Vector vector) {
         Vector v = new Vector();
 
-        v._head._x = (new Coordinate(_head.getY().getCoordinate() * vector._head.getZ().getCoordinate() - (_head.getZ().getCoordinate() * vector._head.getY().getCoordinate())));
-        v._head._y = (new Coordinate(_head.getZ().getCoordinate() * vector._head.getX().getCoordinate() - _head.getX().getCoordinate() * vector._head.getZ().getCoordinate()));
-        v._head._z =(new Coordinate(_head.getX().getCoordinate() * vector._head.getY().getCoordinate() - _head.getY().getCoordinate() * vector._head.getX().getCoordinate()));
+        v._head._x = (new Coordinate(_head.getY().getCoordinate() * vector._head.getZ().getCoordinate() - (_head.getZ().getCoordinate() * vector._head.getY().getCoordinate())+0.0));
+        v._head._y = (new Coordinate(_head.getZ().getCoordinate() * vector._head.getX().getCoordinate() - _head.getX().getCoordinate() * vector._head.getZ().getCoordinate()+0.0));
+        v._head._z =(new Coordinate(_head.getX().getCoordinate() * vector._head.getY().getCoordinate() - _head.getY().getCoordinate() * vector._head.getX().getCoordinate()+0.0));
             return v;
     }
 

@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Plane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/RadialGeometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/RadialGeometry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Sphere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Emmission test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Plane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Plane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/RadialGeometry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/RadialGeometry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Sphere.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Sphere.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Triangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/test/TriangleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/test/TriangleTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/geometries/test/TriangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/test/TriangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Vector.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,51 +78,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/geometries/test/TriangleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2046">
-              <caret line="231" selection-start-line="231" selection-end-line="231" />
+            <state relative-caret-position="2517">
+              <caret line="174" selection-start-line="174" selection-end-line="174" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3104#3113#0" expanded="true" />
-                <element signature="e#3182#3191#0" expanded="true" />
                 <element signature="e#6089#6098#0" expanded="true" />
                 <element signature="e#6258#6267#0" expanded="true" />
-                <element signature="e#8618#8627#0" expanded="true" />
-                <element signature="e#8693#8702#0" expanded="true" />
+                <element signature="method#Test18#0;class#TriangleTest#0" />
+                <element signature="method#emmissionTest#0;class#TriangleTest#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/elements/Camera.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="128" column="50" selection-start-line="128" selection-start-column="50" selection-end-line="128" selection-end-column="50" />
+            <state relative-caret-position="180">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/geometries/Sphere.java">
+        <entry file="file://$PROJECT_DIR$/src/primitives/Vector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="93" column="35" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/geometries/Geometry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="222">
+              <caret line="137" column="87" selection-start-line="137" selection-start-column="87" selection-end-line="137" selection-end-column="87" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2043#2044#0" expanded="true" />
-                <element signature="e#2081#2082#0" expanded="true" />
+                <element signature="e#577#578#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#1115#1116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/primitives/Point2D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+              <folding>
+                <element signature="e#1132#1133#0" expanded="true" />
+                <element signature="e#1556#1557#0" expanded="true" />
+                <element signature="e#1600#1601#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/primitives/Coordinate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#772#773#0" expanded="true" />
+                <element signature="e#995#996#0" expanded="true" />
+                <element signature="e#1029#1030#0" expanded="true" />
+                <element signature="e#1447#1448#0" expanded="true" />
+                <element signature="e#1516#1517#0" expanded="true" />
+                <element signature="e#1680#1681#0" expanded="true" />
+                <element signature="e#1755#1756#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/primitives/Point3D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="e#1353#1354#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,7 +171,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/primitives/Material.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-919">
+            <state relative-caret-position="75">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
@@ -137,7 +180,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/geometries/Intersectable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="60">
               <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -149,7 +192,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/geometries/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="105">
               <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -163,10 +206,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-              <folding>
-                <element signature="e#479#480#0" expanded="true" />
-                <element signature="e#504#505#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -230,18 +269,18 @@
         <option value="$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/test/geometries/TriangleTest.java" />
         <option value="$PROJECT_DIR$/src/primitives/Point3D.java" />
         <option value="$PROJECT_DIR$/src/primitives/test/VectorTest.java" />
-        <option value="$PROJECT_DIR$/src/primitives/Vector.java" />
         <option value="$PROJECT_DIR$/src/renderer/ImageWriter.java" />
         <option value="$PROJECT_DIR$/Tests/renderer/ImageWriterTest.java" />
         <option value="$PROJECT_DIR$/Tests/elements/emmisonTest.java" />
         <option value="$PROJECT_DIR$/src/renderer/Tests/ImageWriterTest.java" />
         <option value="$PROJECT_DIR$/Tests/geometries/CollectionTest.java" />
         <option value="$PROJECT_DIR$/Tests/Tests/CollectionTest.java" />
-        <option value="$PROJECT_DIR$/src/geometries/test/TriangleTest.java" />
         <option value="$PROJECT_DIR$/src/geometries/RadialGeometry.java" />
         <option value="$PROJECT_DIR$/src/geometries/Plane.java" />
         <option value="$PROJECT_DIR$/src/geometries/Triangle.java" />
         <option value="$PROJECT_DIR$/src/geometries/Sphere.java" />
+        <option value="$PROJECT_DIR$/src/geometries/test/TriangleTest.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Vector.java" />
       </list>
     </option>
   </component>
@@ -252,8 +291,7 @@
     </treeState>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="732" />
@@ -267,6 +305,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,7 +322,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -300,8 +338,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556702627536" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556697924216" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556808851626" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -340,7 +377,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TriangleTest.emmissionTest">
+  <component name="RunManager" selected="JUnit.TriangleTest">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -551,15 +588,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TriangleTest.emmissionTest" />
-        <item itemvalue="JUnit.TriangleTest.Test16" />
-        <item itemvalue="JUnit.VectorTest.Test12" />
         <item itemvalue="JUnit.TriangleTest" />
-        <item itemvalue="JUnit.TriangleTest.Test14" />
-        <item itemvalue="JUnit.TriangleTest.Test13" />
         <item itemvalue="JUnit.TriangleTest.Test16" />
-        <item itemvalue="JUnit.TriangleTest.Test17" />
-        <item itemvalue="Application.CollectionTest" />
+        <item itemvalue="JUnit.TriangleTest.emmissionTest" />
+        <item itemvalue="JUnit.VectorTest.Test12" />
+        <item itemvalue="JUnit.TriangleTest.Test14" />
       </list>
     </recent_temporary>
   </component>
@@ -578,53 +611,53 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TriangleTest_Test15 - 2019.04.30 at 15h 17m 19s.xml">
-      <configuration name="TriangleTest.Test15" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TriangleTest_Test15 - 2019.04.30 at 15h 19m 55s.xml">
-      <configuration name="TriangleTest.Test15" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TriangleTest_Test17 - 2019.04.30 at 15h 22m 26s.xml">
-      <configuration name="TriangleTest.Test17" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TriangleTest_Test18 - 2019.04.30 at 15h 22m 38s.xml">
-      <configuration name="TriangleTest.Test18" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TriangleTest_Test17 - 2019.04.30 at 15h 48m 08s.xml">
-      <configuration name="TriangleTest.Test17" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TriangleTest - 2019.04.30 at 15h 48m 24s.xml">
-      <configuration name="TriangleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TriangleTest_Test16 - 2019.04.30 at 21h 59m 05s.xml">
-      <configuration name="TriangleTest.Test16" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TriangleTest_Test13 - 2019.04.30 at 21h 59m 38s.xml">
-      <configuration name="TriangleTest.Test13" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TriangleTest_Test14 - 2019.04.30 at 21h 59m 48s.xml">
-      <configuration name="TriangleTest.Test14" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TriangleTest - 2019.04.30 at 21h 59m 56s.xml">
-      <configuration name="TriangleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ImageWriterTest - 2019.05.01 at 10h 33m 13s.xml">
-      <configuration name="ImageWriterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ImageWriterTest_writeImageTest - 2019.05.01 at 10h 33m 54s.xml">
-      <configuration name="ImageWriterTest.writeImageTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TriangleTest - 2019.05.01 at 10h 55m 47s.xml">
-      <configuration name="TriangleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VectorTest_Test12 - 2019.05.01 at 10h 56m 17s.xml">
-      <configuration name="VectorTest.Test12" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="VectorTest_Test12 - 2019.05.01 at 10h 56m 53s.xml">
       <configuration name="VectorTest.Test12" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TriangleTest_Test16 - 2019.05.01 at 10h 57m 36s.xml">
       <configuration name="TriangleTest.Test16" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest_emmissionTest - 2019.05.02 at 17h 18m 35s.xml">
+      <configuration name="TriangleTest.emmissionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest_emmissionTest - 2019.05.02 at 17h 22m 24s.xml">
+      <configuration name="TriangleTest.emmissionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest_emmissionTest - 2019.05.02 at 17h 23m 39s.xml">
+      <configuration name="TriangleTest.emmissionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest_emmissionTest - 2019.05.02 at 17h 24m 24s.xml">
+      <configuration name="TriangleTest.emmissionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest_Test16 - 2019.05.02 at 17h 27m 30s.xml">
+      <configuration name="TriangleTest.Test16" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest_Test16 - 2019.05.02 at 17h 40m 19s.xml">
+      <configuration name="TriangleTest.Test16" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest_Test16 - 2019.05.02 at 17h 41m 27s.xml">
+      <configuration name="TriangleTest.Test16" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest_Test16 - 2019.05.02 at 17h 41m 33s.xml">
+      <configuration name="TriangleTest.Test16" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest_Test16 - 2019.05.02 at 17h 43m 28s.xml">
+      <configuration name="TriangleTest.Test16" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest_Test16 - 2019.05.02 at 17h 45m 25s.xml">
+      <configuration name="TriangleTest.Test16" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest_Test16 - 2019.05.02 at 17h 48m 38s.xml">
+      <configuration name="TriangleTest.Test16" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest_Test16 - 2019.05.02 at 17h 49m 34s.xml">
+      <configuration name="TriangleTest.Test16" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest - 2019.05.02 at 17h 52m 07s.xml">
+      <configuration name="TriangleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest - 2019.05.02 at 17h 54m 15s.xml">
+      <configuration name="TriangleTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -640,9 +673,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="732" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="732" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.15771812" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.15993538" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -651,8 +685,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43201134" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43125" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3984375" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.04249292" />
@@ -663,7 +697,7 @@
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.328125" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="14" visible="true" weight="0.2765625" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.2765625" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -722,10 +756,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/primitives/Point3D.java</url>
-          <line>123</line>
+          <url>file://$PROJECT_DIR$/src/primitives/Vector.java</url>
+          <line>151</line>
           <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -740,20 +774,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/primitives/Coordinate.java" />
-    <entry file="file://$USER_HOME$/שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/primitives/Vector.java" />
-    <entry file="file://$USER_HOME$/שנה ב/se5779-01-3121-4448/se5779-01-3121-4448.iml" />
-    <entry file="file://$PROJECT_DIR$/src/primitives/Util.java" />
-    <entry file="file://$PROJECT_DIR$/src/primitives/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/geometries/Geometry.java" />
-    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/geometries/FlatGeometry.java" />
-    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/geometries/Plane.java" />
     <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/geometries/RadialGeometry.java" />
     <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/geometries/Sphere.java" />
     <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/geometries/Triangle.java" />
@@ -767,13 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/elements/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -804,13 +817,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/primitives/Ray.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="128" column="50" selection-start-line="128" selection-start-column="50" selection-end-line="128" selection-end-column="50" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/geometries/test/PlaneTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -852,63 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Point3D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
-          <folding>
-            <element signature="e#1328#1329#0" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Point2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#1600#1601#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Coordinate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
-          <folding>
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1447#1448#0" expanded="true" />
-            <element signature="e#1516#1517#0" expanded="true" />
-            <element signature="e#1680#1681#0" expanded="true" />
-            <element signature="e#1755#1756#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/geometries/FlatGeometry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -926,44 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometries/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometries/RadialGeometry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding>
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometries/Intersectable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Material.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-919">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -974,18 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-667">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometries/Geometry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2043#2044#0" expanded="true" />
-            <element signature="e#2081#2082#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,26 +925,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometries/test/TriangleTest.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2046">
-          <caret line="231" selection-start-line="231" selection-end-line="231" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3104#3113#0" expanded="true" />
-            <element signature="e#3182#3191#0" expanded="true" />
-            <element signature="e#6089#6098#0" expanded="true" />
-            <element signature="e#6258#6267#0" expanded="true" />
-            <element signature="e#8618#8627#0" expanded="true" />
-            <element signature="e#8693#8702#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2250">
+          <caret line="150" column="50" selection-start-line="150" selection-start-column="50" selection-end-line="150" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/geometries/Sphere.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
+        <state relative-caret-position="1245">
           <caret line="93" column="35" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/Geometry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2043#2044#0" expanded="true" />
+            <element signature="e#2081#2082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Material.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/Intersectable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/RadialGeometry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Emmission test.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elements/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Point2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="e#1556#1557#0" expanded="true" />
+            <element signature="e#1600#1601#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Point3D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#1353#1354#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Coordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+            <element signature="e#1516#1517#0" expanded="true" />
+            <element signature="e#1680#1681#0" expanded="true" />
+            <element signature="e#1755#1756#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="137" column="87" selection-start-line="137" selection-start-column="87" selection-end-line="137" selection-end-column="87" />
+          <folding>
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1115#1116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/test/TriangleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2517">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6089#6098#0" expanded="true" />
+            <element signature="e#6258#6267#0" expanded="true" />
+            <element signature="method#Test18#0;class#TriangleTest#0" />
+            <element signature="method#emmissionTest#0;class#TriangleTest#0" />
+          </folding>
         </state>
       </provider>
     </entry>

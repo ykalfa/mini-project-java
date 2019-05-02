@@ -304,11 +304,11 @@ public class TriangleTest {
                     new Point3D(  0,  -150, -50),
                     new Point3D(-150, -150, -50));
 
-            sphere.setEmmission(new Color (255, 255, 255));
-            triangle1.setEmmission(new Color (255, 255, 255));
-            triangle2.setEmmission(new Color (255, 255, 255));
-            triangle3.setEmmission(new Color (255, 255, 255));
-            triangle4.setEmmission(new Color (255, 255, 255));
+            sphere.setEmmission(new Color (55, 255, 48));
+            triangle1.setEmmission(new Color (22, 43, 19));
+            triangle2.setEmmission(new Color (255, 207, 87));
+            triangle3.setEmmission(new Color (81, 44, 255));
+            triangle4.setEmmission(new Color (230, 255, 29));
 
             scene.addGeometry(sphere);
             scene.addGeometry(triangle1);
