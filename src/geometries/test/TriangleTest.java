@@ -52,7 +52,7 @@ public class TriangleTest {
                 System.out.println(ray.getDirection());
 
                 // Checking z-coordinate
-                assertTrue(Double.compare(screen[i][j].getZ().getCoordinate(), -1.0) == 0);
+                assertTrue(Double.compare(screen[i][j].getZ().getCoordinate()+0.0, -1.0) == 0);
 
                 // Checking all options
                 double x = screen[i][j].getX().getCoordinate();

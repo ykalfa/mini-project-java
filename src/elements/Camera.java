@@ -163,7 +163,7 @@ public class Camera {
         Point3D pc = new Point3D(_P0);
         Vector tempV=new Vector(_vTo);
         tempV.scale(screenDist);
-        pc.add(tempV);
+        pc= pc.add(tempV);
         double rx = screenWidth / Nx;
         double ry = screenHeight / Ny;
         double fVright, fVup;
@@ -173,8 +173,8 @@ public class Camera {
         Vector tVup = new Vector(_vUp);
         tVright.scale(fVright);
         tVup.scale(fVup);
-        tVright.subtract(tVup);
-        pc.add(tVright);
+        tVright = tVright.subtract(tVup);
+        pc = pc.add(tVright);
         Vector poToP = new Vector(_P0, pc);
         try{
             poToP.normalize();

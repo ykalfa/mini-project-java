@@ -120,7 +120,7 @@ public class Sphere extends RadialGeometry
         if(t1>0)
         {
             vectorToAdd.scale(t1);
-            p1.add(vectorToAdd);
+            p1= p1.add(vectorToAdd);
             ans.add(p1);
         }
         if(t2>0)
@@ -128,7 +128,7 @@ public class Sphere extends RadialGeometry
             Point3D p2=new Point3D(ray.getPOO());
             vectorToAdd.setHead(ray.getDirection().getHead());
             vectorToAdd.scale(tm+th);
-            p2.add(vectorToAdd);
+            p2= p2.add(vectorToAdd);
             if(p1.compareTo(p2)==-1)
                 ans.add(p2);
         }

@@ -121,7 +121,7 @@ public class Plane extends Geometry implements FlatGeometry
         Vector copyDirection=new Vector(ray.getDirection()); // copy of V
         copyDirection.scale(t); // t*V
         p2rVector.setHead(ray.getPOO());
-        p2rVector.add(copyDirection); //p2rVector start from P0 , and we add to him t*V , and we get P. (the cut point with the plane)
+        p2rVector = p2rVector.add(copyDirection); //p2rVector start from P0 , and we add to him t*V , and we get P. (the cut point with the plane)
         Point3D ans= new Point3D(p2rVector.getHead());
         if(t<0)
             return new ArrayList<>();
