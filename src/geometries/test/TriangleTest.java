@@ -81,6 +81,7 @@ public class TriangleTest {
 
     /************************************** Triangle test ******************************************************/
     @Test
+    //TODO test 14
     public void Test14()
     {
         final int WIDTH  = 3;
@@ -150,6 +151,7 @@ public class TriangleTest {
     }
 
     @Test
+    //TODO test 15, the problem is in the scale function and maybe in ths normalize function
     public void Test15()
     {
         System.out.print("Test15: Triangle getNormal test: ");
@@ -163,6 +165,8 @@ public class TriangleTest {
     }
     /************************************** Sphere test ******************************************************/
     @Test
+
+    //TODO test 16
     public void Test16(){
 
         final int WIDTH  = 3;
@@ -228,6 +232,7 @@ public class TriangleTest {
     }
     /************************************ Plane test *****************************************************/
     @Test
+    //TODO test 18
     public void Test18()
     {
 
@@ -282,13 +287,14 @@ public class TriangleTest {
             System.out.println(iPoint);
     }
         @Test
+        //TODO need to make a picture with the colors in line `313` - `317`
         public void emmissionTest()
         {
             Scene scene = new Scene();
             scene.setScreenDistance(50);
 
             Sphere sphere = new Sphere(50, new Point3D(0.0, 0.0, -50));
-            Triangle triangle1 = new Triangle(new Point3D( 150, 0, -50),
+            Triangle triangle = new Triangle(new Point3D( 150, 0, -50),
                     new Point3D(  0, 150, -50),
                     new Point3D( 150, 150, -50));
 
@@ -304,14 +310,20 @@ public class TriangleTest {
                     new Point3D(  0,  -150, -50),
                     new Point3D(-150, -150, -50));
 
+            sphere.setEmmission(new Color (255, 152, 186));
+            triangle.setEmmission(new Color (255, 6, 0));
+            triangle2.setEmmission(new Color (51, 228, 255));
+            triangle3.setEmmission(new Color (255, 255, 27));
+            triangle4.setEmmission(new Color (34, 255, 18));
+
             sphere.setEmmission(new Color (55, 255, 48));
-            triangle1.setEmmission(new Color (22, 43, 19));
+            triangle.setEmmission(new Color (22, 43, 19));
             triangle2.setEmmission(new Color (255, 207, 87));
             triangle3.setEmmission(new Color (81, 44, 255));
             triangle4.setEmmission(new Color (230, 255, 29));
 
             scene.addGeometry(sphere);
-            scene.addGeometry(triangle1);
+            scene.addGeometry(triangle);
             scene.addGeometry(triangle2);
             scene.addGeometry(triangle3);
             scene.addGeometry(triangle4);
@@ -325,60 +337,5 @@ public class TriangleTest {
             render.writeToImage();
         }
 
-
-/*@Test
-    public void TriangleIntersectionPointsTest() {
-        final int WIDTH = 3;
-        final int HEIGHT = 3;
-        Ray[][] rays = new Ray[HEIGHT][WIDTH];
-        Camera camera = new Camera(new Point3D(0.0, 0.0, 0.0),
-                new Vector(0.0, 1.0, 0.0),
-                new Vector(0.0, 0.0, -1.0));
-        Triangle triangle = new Triangle(new Point3D(0, 1, -2),
-                new Point3D(1, -1, -2),
-                new Point3D(-1, -1, -2));
-        Triangle triangle2 = new Triangle(new Point3D(0, 10, -2),
-                new Point3D(1, -1, -2),
-                new Point3D(-1, -1, -2));
-        List<Point3D> intersectionPointsTriangle = new ArrayList<>();
-        List<Point3D> intersectionPointsTriangle2 = new ArrayList<>();
-        System.out.println("Camera:\n" + camera);
-        for (int i = 0; i < HEIGHT; i++) {
-            for (int j = 0; j < WIDTH; j++) {
-                rays[i][j] = camera.constructRayThroughPixel(WIDTH, HEIGHT, j, i, 1, 3 * WIDTH, 3 * HEIGHT);
-                List<Point3D> rayIntersectionPoints = triangle.FindIntersections(rays[i][j]);
-                List<Point3D> rayIntersectionPoints2 = triangle2.FindIntersections(rays[i][j]);
-                for (Point3D iPoint : rayIntersectionPoints) {
-                    intersectionPointsTriangle.add(iPoint);
-                }
-                for (Point3D iPoint : rayIntersectionPoints2) {
-                    intersectionPointsTriangle2.add(iPoint);
-                }
-            }
-        }
-        assertEquals(intersectionPointsTriangle.size(), 1);
-        assertEquals(intersectionPointsTriangle2.size(), 2);
-        System.out.println("Intersection Points:");
-        for (Point3D iPoint : intersectionPointsTriangle) {
-            System.out.println(iPoint);
-        }
-        System.out.println("--");
-        for (Point3D iPoint : intersectionPointsTriangle2) {
-            System.out.println(iPoint);
-        }
-    }*/
-
-//
-//    @Test
-//    public void testGetNormal() {
-//        System.out.println("getNormal");
-//        Point3D point = null;
-//        Triangle instance = new Triangle();
-//        Vector expResult = null;
-//        Vector result = instance.getNormal(point);
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
-//    }
 
 }
