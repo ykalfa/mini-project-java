@@ -133,33 +133,16 @@ public class Vector implements Comparable<Vector> {
      @param scalingFactor double represents factor to scale vector
      */
     public void scale(double scalingFactor) {
-  //need to change from void to Vector
+//need to change from void to Vector
       /*  Vector v = new Vector();
         v._head._x = new Coordinate(this._head.getX().getCoordinate()*scalingFactor);
         v._head._y = new Coordinate(this._head.getY().getCoordinate()*scalingFactor);
         v._head._z = new Coordinate(this._head.getZ().getCoordinate()*scalingFactor);
         return v;
-
 */
-
-         if (_head.getX().getCoordinate() != 0)
-             this._head.setX(new Coordinate(_head.getX().getCoordinate()+0.0 * scalingFactor));
-         else
-             this._head.setX(new Coordinate(0));
-
-
-         if (_head.getY().getCoordinate()!= 0)
-             this._head.setY(new Coordinate(_head.getY().getCoordinate() * scalingFactor));
-         else
-             this._head.setY(new Coordinate(0));
-
-
-         if (_head.getZ().getCoordinate()!= 0)
-             this._head.setZ(new Coordinate(_head.getZ().getCoordinate() * scalingFactor));
-         else
-             this._head.setZ(new Coordinate(0));
-
-
+        this._head.setX(new Coordinate(_head.getX().getCoordinate() * scalingFactor+0.0));
+        this._head.setY(new Coordinate(_head.getY().getCoordinate() * scalingFactor+0.0));
+        this._head.setZ(new Coordinate(_head.getZ().getCoordinate() * scalingFactor+0.0));
 }
 
     /**
@@ -174,13 +157,7 @@ public class Vector implements Comparable<Vector> {
         Coordinate k = new Coordinate(_head.getX().getCoordinate() * vector._head.getY().getCoordinate() - _head.getY().getCoordinate() * vector._head.getX().getCoordinate()+0.0);
 
         return new Vector(new Point3D(i,j,k));
-/*
-        Vector v = new Vector();
 
-        v._head._x = (new Coordinate(_head.getY().getCoordinate() * vector._head.getZ().getCoordinate() - (_head.getZ().getCoordinate() * vector._head.getY().getCoordinate())));
-        v._head._y = (new Coordinate(_head.getZ().getCoordinate() * vector._head.getX().getCoordinate() - _head.getX().getCoordinate() * vector._head.getZ().getCoordinate()));
-        v._head._z =(new Coordinate(_head.getX().getCoordinate() * vector._head.getY().getCoordinate() - _head.getY().getCoordinate() * vector._head.getX().getCoordinate()));
-            return v;*/
     }
 
 

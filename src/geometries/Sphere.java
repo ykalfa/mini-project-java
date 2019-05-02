@@ -8,18 +8,17 @@ import primitives.*;
 
 /**
  * Class Represents Sphere In 3D.
- * Defined By Rdius From Father Class,
+ * Defined By Radius From Father Class,
  * And Center Point.
  *
- * @author מיכאל
  */
 public class Sphere extends RadialGeometry
 {
-    private Point3D _center;    //Point reresnts the Sphere Center.
+    private Point3D _center;    //Point represent the Sphere Center.
     // ***************** Constructors ********************** //
     /**
      * Default Constractor
-     * set rdius to 1.0
+     * set radius to 1.0
      * set Center Point to (0,0,0).
      *
      */
@@ -85,14 +84,14 @@ public class Sphere extends RadialGeometry
      * Process:
      * 1. create Vector from center point to source Point of the ray
      * 2. do dot product between this Vector and the ray direction
-     * 3. find the distance between center and the Vector using pitagoras
+     * 3. find the distance between center and the Vector using Pitagoras
      * 4. if the distance smaller or equal to the radius it meens that there is intersection Point
      * 5. find half of the length of the Vector that cross the Sphere
      * 6. reduce from the distance in line 2 the distance in line 5
      * 7. add the distance in line 6 to the source Point of the ray, this is the first Point
      * 8. add to the distance in line 2 the distance in line 5
      * 9. add it to the same source point of the ray
-     * 10. from lines 9+7 we 2 Point of intersection with the Sphere.
+     * 10. from lines 9+7 we 2 got Point of intersection with the Sphere.
      *
      * @param ray Ray object to find intersection with
      * @return
