@@ -316,12 +316,6 @@ public class TriangleTest {
             triangle3.setEmmission(new Color (255, 255, 27));
             triangle4.setEmmission(new Color (34, 255, 18));
 
-            sphere.setEmmission(new Color (55, 255, 48));
-            triangle.setEmmission(new Color (22, 43, 19));
-            triangle2.setEmmission(new Color (255, 207, 87));
-            triangle3.setEmmission(new Color (81, 44, 255));
-            triangle4.setEmmission(new Color (230, 255, 29));
-
             scene.addGeometry(sphere);
             scene.addGeometry(triangle);
             scene.addGeometry(triangle2);

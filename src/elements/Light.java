@@ -25,7 +25,7 @@ public abstract class Light
      */
     public Light()
     {
-        _color=Color.WHITE;
+        _color=Color.BLACK;
     }
 
     /**

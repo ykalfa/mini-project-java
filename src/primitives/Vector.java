@@ -59,9 +59,20 @@ public class Vector implements Comparable<Vector> {
      */
     public Vector(Point3D p1, Point3D p2) {
         _head = new Point3D(p2);
-        _head.setX( _head.getX().subtract(p1.getX()));
-        _head.setY(_head.getY().subtract(p1.getY()));
-        _head.setZ( _head.getZ().subtract(p1.getZ()));
+
+        Coordinate x1 = _head.getX().subtract(p1.getX());
+
+        Coordinate x2 = _head.getY().subtract(p1.getY());
+
+        Coordinate x3 = _head.getZ().subtract(p1.getZ());
+
+        _head.setX(x1);
+        _head.setY(x2);
+        _head.setZ(x3);
+
+        //_head.setX(new Coordinate(_head.getX().subtract(p1.getX())));
+        //_head.setY(new Coordinate(_head.getY().subtract(p1.getY())));
+        //_head.setZ(new Coordinate(_head.getZ().subtract(p1.getZ())));
 
     }
     // ***************** Getters/Setters ********************** //
@@ -157,7 +168,6 @@ public class Vector implements Comparable<Vector> {
         Coordinate k = new Coordinate(_head.getX().getCoordinate() * vector._head.getY().getCoordinate() - _head.getY().getCoordinate() * vector._head.getX().getCoordinate()+0.0);
 
         return new Vector(new Point3D(i,j,k));
-
     }
 
 
@@ -185,7 +195,7 @@ double length = length();
             throw new ArithmeticException("ERROR!!! length is 0");
         }
 
-        scale(1.0/length());
+        scale(1.0/length);
     }
 
     /**
