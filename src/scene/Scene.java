@@ -31,7 +31,6 @@ import geometries.Geometry;
  * backgroung color
  * ambiantlite
  * and Scene name
- * @author מיכאל
  */
 public class Scene {
 

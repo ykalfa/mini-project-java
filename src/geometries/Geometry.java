@@ -34,7 +34,6 @@ public abstract class Geometry implements Intersectable {
      * @return Vector represents noraml of geometry for given point
      */
     public abstract Vector getNormal(Point3D point);
-
     /**
      * return Geometry Shininess.
      *

@@ -11,7 +11,6 @@ import java.awt.Color;
  *  Class Represents Light
  *  include:
  *  1 Color Object to define the light Color.
- * @author מיכאל
  */
 
 public abstract class Light

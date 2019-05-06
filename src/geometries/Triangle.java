@@ -254,23 +254,29 @@ public class Triangle extends Geometry implements FlatGeometry {
      */
        @Override
     public Vector getNormal(Point3D point)
-       {
-           Vector v1 = new Vector(_p2,_p1);//
-           Vector v2 = new Vector (_p2,_p3);//
-           Vector normalVector = v1.crossProduct(v2);
-
-
-         //Vector normalVector = (new Vector(_p2, _p1).crossProduct(new Vector(_p2, _p3))); // p2_p1 X p2_p3 = normalVector
-         try
-         {
-             normalVector.normalize();
-             normalVector.scale(-1);
-         }
-         catch (ArithmeticException e)
-         {
-
-         }
-         return normalVector;
-       }
-
+{   Vector normal = (new Vector(_p2, _p1).crossProduct(new Vector(_p3, _p2)));
+// the mistake has that we do _p2,_p1 X _p2,_p3
+    try
+    {
+        normal.normalize();
+        normal.scale(-1);
+    }
+    catch (ArithmeticException e) { }
+    return normal;}
+//}
+//           Vector v1 = new Vector(_p2,_p1);//
+//           Vector v2 = new Vector (_p2,_p3);//
+//           Vector normalVector = v1.crossProduct(v2);
+//         //Vector normalVector = (new Vector(_p2, _p1).crossProduct(new Vector(_p2, _p3))); // p2_p1 X p2_p3 = normalVector
+//         try
+//         {
+//             normalVector.normalize();
+//             normalVector.scale(-1);
+//         }
+//         catch (ArithmeticException e)
+//         {
+//
+//         }
+//         return normalVector;
+//       }
 }
