@@ -10,7 +10,6 @@ import java.awt.Color;
 
 /**
  *
- * @author מיכאל
  */
 public class SpotLight extends PointLight implements LightSource {
 

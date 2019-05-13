@@ -89,6 +89,94 @@ public class Render {
         return intersectionPoints;
     }
 
+    /**
+     * Calculate the specular of the geometry with the light
+     * Process:
+     * 1. multiple the dot product of l in normal By 2
+     * 2. scale the noramal By line 1
+     * 3. substract the normal from l
+     * 4. power the dot product of v in l by the geometry shininess
+     * 5. double 4 By the ks
+     * 6. divide the RGB values of lightintensity by line 5 and return the color.
+     *
+     * @param ks    doubel of the geometry matirial
+     * @param v     Vector from intersection point To the Camera
+     * @param normal    Vector normal of the geometry at the intersection point
+     * @param l     Vector from the light source to the intersection point
+     * @param shininess     double of the geometry shininess
+     * @param lightIntensity    Color of the light in the intersection point
+     * @return  Color of specular Light in the intersection point
+     */
+    private Color calcSpecularComp(double ks, Vector v, Vector normal,
+                                   Vector l, double shininess, Color lightIntensity)
+    {
+        try
+        {
+            v.normalize();
+            normal.normalize();
+            l.normalize();
+        }
+        catch(ArithmeticException e)
+        {
+
+        }
+        double dot=l.dotProduct(normal);
+
+        if(dot>0)
+            normal.scale(-1);
+
+        normal.scale(2*l.dotProduct(normal));
+        l.subtract(normal);
+        double factor=ks*Math.pow(v.dotProduct(l), shininess);
+        int r,g,b;
+        r=lightIntensity.getRed();
+        g=lightIntensity.getGreen();
+        b=lightIntensity.getBlue();
+        return Tools.giveColor(r*factor, g*factor, b*factor);
+    }
+
+    /**
+     * Calculate the difusive light with the geometry
+     * Process:
+     * 1. make dot product of l with the geometry normal
+     * 2. multiple it by the kd of the geometry matirial
+     * 3. multiple the RGB values og the light by line 2
+     * 4. return the Color.
+     *
+     * @param kd    double represents the geometry matirial kd Value
+     * @param normal    Vector  represents the Geomtry normal
+     * @param l         Vector represents the vector from the light source to the intersectin point
+     * @param lightIntensity    Color represents the color of the light.
+     * @return Color represents the difusive light for this point
+     */
+    private Color calcDiffusiveComp(double kd, Vector normal, Vector l, Color lightIntensity)
+    {
+        try
+        {
+            normal.normalize();
+            l.normalize();
+        }
+        catch(ArithmeticException e)
+        {
+
+        }
+        double dot=l.dotProduct(normal);
+
+        if(dot>0)
+            normal.scale(-1);
+
+        double intensity=kd*(normal.dotProduct(l));
+        intensity=Math.abs(intensity);
+        int r,g,b;
+        r=lightIntensity.getRed();
+        g=lightIntensity.getGreen();
+        b=lightIntensity.getBlue();
+        Color ansColor= Tools.giveColor(intensity*r, intensity*g, intensity*b);
+        return ansColor;
+    }
+
+
+
 
     /**
      * find the closest point to the Scene from the list of intersection point
@@ -140,6 +228,7 @@ public class Render {
     }
 
     private Color calcColor(Geometry geometry, Point3D point) {
+
         return addColors(_scene.getAmbientLight().getIntensity(), geometry.getEmmission());
     }
 
@@ -152,4 +241,8 @@ public class Render {
         Color addColor=new Color(r>255?255:r, g>255?255:g, b>255?255:b);
         return addColor;
     }
+
+
+
+
 }

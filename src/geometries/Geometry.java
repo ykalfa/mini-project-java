@@ -15,6 +15,7 @@ public abstract class Geometry implements Intersectable {
     //The geometry's material
     private Material _material = new Material();
     //The geometry shininess
+    //TODO need pass this field to material
     private double _nShininess = 1;
     //The geometry emmission
     private Color _emmission = new Color(0, 0, 0);
@@ -38,6 +39,7 @@ public abstract class Geometry implements Intersectable {
      * return Geometry Shininess.
      *
      * @return Double represents this geometry shininess
+//TODO need pass this field to material
      */
     public double getShininess() {
         return _nShininess;
