@@ -17,6 +17,7 @@ import java.util.Iterator;
 import java.util.List;
 import elements.AmbientLight;
 import elements.Camera;
+import elements.LightSource;
 import geometries.Geometry;
 
 /**
@@ -31,13 +32,13 @@ import geometries.Geometry;
  * backgroung color
  * ambiantlite
  * and Scene name
- * @author מיכאל
  */
 public class Scene {
 
     private Color _background;
     private AmbientLight _ambientLight;
     private List<Geometry> _geometries = new ArrayList<Geometry>();
+    private List<LightSource> _lights = new ArrayList<LightSource>();
     private Camera _camera;
     private double _screenDistance;
     private String _sceneName = "scene";
@@ -71,6 +72,7 @@ public class Scene {
         _geometries.addAll(scene._geometries);
         _camera=new Camera(scene._camera);
         _screenDistance=scene._screenDistance;
+        _lights.addAll(scene._lights);
         _sceneName=scene._sceneName;
 
     }
@@ -205,4 +207,24 @@ public class Scene {
     {
         return _geometries.iterator();
     }
+
+    /**
+     * add light to this class Light list
+     * @param light LightSource to add to this class list
+     */
+    public void addLight(LightSource light)
+    {
+        _lights.add(light);
+    }
+    /**
+     * return iterator for the lights list
+     * @return Iterator for Light list
+     */
+    public Iterator<LightSource> getLightsIterator()
+    {
+        return _lights.iterator();
+    }
+
+
+
 }

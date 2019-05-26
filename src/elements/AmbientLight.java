@@ -23,7 +23,7 @@ public class AmbientLight extends Light
      */
     public AmbientLight()
     {
-        super();
+        this._color=new Color(0,0,0);
     }
 
     /**

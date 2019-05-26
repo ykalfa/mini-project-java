@@ -15,9 +15,10 @@ public abstract class Geometry implements Intersectable {
     //The geometry's material
     private Material _material = new Material();
     //The geometry shininess
-    private double _nShininess = 1;
+    //TODO need pass this field to material
+    private double _nShininess = 100;
     //The geometry emmission
-    private Color _emmission = new Color(0, 0, 0);
+    private Color _emmission = new Color(20, 20, 20);
 
     /**
      * return a list of all intersction points for given ray
@@ -34,11 +35,11 @@ public abstract class Geometry implements Intersectable {
      * @return Vector represents noraml of geometry for given point
      */
     public abstract Vector getNormal(Point3D point);
-
     /**
      * return Geometry Shininess.
      *
      * @return Double represents this geometry shininess
+//TODO need pass this field to material
      */
     public double getShininess() {
         return _nShininess;

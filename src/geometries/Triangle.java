@@ -140,12 +140,12 @@ public class Triangle extends Geometry implements FlatGeometry {
     @Override
     public List<Point3D> FindIntersections(Ray ray) {
 
-        if (getNormal(_p2).length() == 0)
+      /*  if (getNormal(_p2).length() == 0)
         {
             return new ArrayList();
         }
         Plane intersectionHelp = new Plane(getNormal(_p2), _p2); // send to plane normal and _p2
-        ArrayList<Point3D> ans = (ArrayList<Point3D>) (intersectionHelp.FindIntersections(ray));
+        List<Point3D> ans = intersectionHelp.FindIntersections(ray);
         if (ans.isEmpty())
         {
             return new ArrayList<>();
@@ -174,9 +174,78 @@ public class Triangle extends Geometry implements FlatGeometry {
         if (!((d1 > 0 && d2 > 0 && d3 > 0) || (d1 < 0 && d2 < 0 && d3 < 0))) // if all of the d are with the same sign add them to the list
         {
             ans = new ArrayList();
+
+
+
+
+
+
         }
 ////TODO maybe we need to add the cut poitn to ans ? or just return ans ?
         return ans;
+        */
+
+        if (getNormal(_p2).length() == 0) {
+            return new ArrayList();
+        }
+        Plane t_plane = new Plane(getNormal(_p2), _p2);
+        ArrayList<Point3D> answer = (ArrayList<Point3D>) (t_plane.FindIntersections(ray));
+        //TODO  ********** this is my problem in SHADOW TEST, and in recursiveTest 02 ********
+        if (answer.isEmpty()) {
+            return new ArrayList<>();
+        }
+        Point3D P0 = new Point3D(ray.getPOO());
+        Point3D P = answer.get(0);
+
+        Vector n1 = new Vector(P0, _p1).crossProduct(new Vector(P0, _p2));
+        Vector n2 = new Vector(P0, _p2).crossProduct(new Vector(P0, _p3));
+        Vector n3 = new Vector(P0, _p3).crossProduct(new Vector(P0, _p1));
+
+        try {
+            n1.normalize();
+            n2.normalize();
+            n3.normalize();
+
+            n1.scale(-1);
+            n2.scale(-1);
+            n3.scale(-1);
+        } catch (Exception e) {
+            return new ArrayList();
+        }
+
+        double d1 = (new Vector(P, P0)).dotProduct(n1);
+        double d2 = (new Vector(P, P0)).dotProduct(n2);
+        double d3 = (new Vector(P, P0)).dotProduct(n3);
+
+        // case the Triangle is on the view plane
+        Vector p0_P = new Vector(P0, P);
+        if ((p0_P.getHead().getX().getCoordinate() == p0_P.getHead().getY().getCoordinate()) && (p0_P.getHead().getX().getCoordinate() == p0_P.getHead().getZ().getCoordinate()) && (p0_P.getHead().getX().getCoordinate() == 0)) {
+
+            boolean has_neg, has_pos;
+
+            d1 = sign(P, _p1, _p2);
+            d2 = sign(P, _p2, _p3);
+            d3 = sign(P, _p3, _p1);
+
+            has_neg = (d1 < 0) || (d2 < 0) || (d3 < 0);
+            has_pos = (d1 > 0) || (d2 > 0) || (d3 > 0);
+
+            if (!(has_neg && has_pos)) {
+                return answer;
+            }
+        }
+
+        if (!((d1 > 0 && d2 > 0 && d3 > 0) || (d1 < 0 && d2 < 0 && d3 < 0))) {
+            answer = new ArrayList();
+        }
+        return answer;
+    }
+
+    double sign (Point3D p1, Point3D p2, Point3D p3)
+    {
+        return (p1.getX().getCoordinate() - p3.getX().getCoordinate()) * (p2.getY().getCoordinate() - p3.getY().getCoordinate()) - (p2.getX().getCoordinate() - p3.getX().getCoordinate()) * (p1.getY().getCoordinate() - p3.getY().getCoordinate());
+
+
     }
     /**
      * Return noramal Vector Of Triangle.
@@ -186,23 +255,29 @@ public class Triangle extends Geometry implements FlatGeometry {
      */
        @Override
     public Vector getNormal(Point3D point)
-       {
-           Vector v1 = new Vector(_p2,_p1);//
-           Vector v2 = new Vector (_p2,_p3);//
-           Vector normalVector = v1.crossProduct(v2);
-
-
-         //Vector normalVector = (new Vector(_p2, _p1).crossProduct(new Vector(_p2, _p3))); // p2_p1 X p2_p3 = normalVector
-         try
-         {
-             normalVector.normalize();
-             normalVector.scale(-1);
-         }
-         catch (ArithmeticException e)
-         {
-
-         }
-         return normalVector;
-       }
-
+{   Vector normal = (new Vector(_p2, _p1).crossProduct(new Vector(_p3, _p2)));
+// the mistake has that we do _p2,_p1 X _p2,_p3
+    try
+    {
+        normal.normalize();
+        normal.scale(-1);
+    }
+    catch (ArithmeticException e) { }
+    return normal;}
+//}
+//           Vector v1 = new Vector(_p2,_p1);//
+//           Vector v2 = new Vector (_p2,_p3);//
+//           Vector normalVector = v1.crossProduct(v2);
+//         //Vector normalVector = (new Vector(_p2, _p1).crossProduct(new Vector(_p2, _p3))); // p2_p1 X p2_p3 = normalVector
+//         try
+//         {
+//             normalVector.normalize();
+//             normalVector.scale(-1);
+//         }
+//         catch (ArithmeticException e)
+//         {
+//
+//         }
+//         return normalVector;
+//       }
 }

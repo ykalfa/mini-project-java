@@ -30,10 +30,10 @@ public class Camera {
      * To Vector to (0,0,-1)
      */
     public Camera() {
-        _P0 = new Point3D();
+        _P0 = new Point3D(0,0,0);
         _vUp = new Vector(0,1, 0);
         _vTo = new Vector(0, 0,-1);
-        _vRight = _vTo.crossProduct(_vUp);
+        _vRight = _vUp.crossProduct(_vTo);
     }
     /**
      * Copy Constractor

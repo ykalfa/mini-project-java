@@ -116,7 +116,9 @@ public class Plane extends Geometry implements FlatGeometry
         ArrayList<Point3D> ansList=new ArrayList();//
         //if the ray has the same direction as the plane so we dont have intersections
         if(_normal.dotProduct(ray.getDirection())==0) // if the vector is 90' to the plane so we not have a intersection
-            return ansList; //return empty list
+        //TODO MAYBE WE NEED RETURN NULL HERE 26/05/19 11:15
+            return new ArrayList<>(); //return empty list
+
         double t=-(_normal.dotProduct(p2rVector)/(_normal.dotProduct(ray.getDirection())));   //   -N * (P0-Q0)/(N*V)
         Vector copyDirection=new Vector(ray.getDirection()); // copy of V
         copyDirection.scale(t); // t*V
