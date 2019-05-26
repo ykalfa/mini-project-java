@@ -22,7 +22,7 @@ public void shadowTest(){
 
         Scene scene = new Scene();
         Sphere sphere = new Sphere(500, new Point3D(0.0, 0.0, -1000));
-        sphere.setShininess(20);
+        sphere.setShininess(100);
         sphere.setEmmission(new Color(0, 0, 100));
 
         scene.addGeometry(sphere);
@@ -45,7 +45,6 @@ public void shadowTest(){
         ImageWriter imageWriter = new ImageWriter("Shadow test", 500, 500, 500, 500);
 
         Render render = new Render(imageWriter, scene);
-//TODO here the problem is start
 
         render.renderImage();
         render.writeToImage();

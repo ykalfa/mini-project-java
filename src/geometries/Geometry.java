@@ -16,9 +16,9 @@ public abstract class Geometry implements Intersectable {
     private Material _material = new Material();
     //The geometry shininess
     //TODO need pass this field to material
-    private double _nShininess = 1;
+    private double _nShininess = 100;
     //The geometry emmission
-    private Color _emmission = new Color(0, 0, 0);
+    private Color _emmission = new Color(20, 20, 20);
 
     /**
      * return a list of all intersction points for given ray

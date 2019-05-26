@@ -51,15 +51,15 @@ public class RecursiveTest
         scene.setScreenDistance(300);
 
         Sphere sphere = new Sphere(300, new Point3D(-550, -500, -1000));
-        sphere.setShininess(20);
+        sphere.setShininess(100);
         sphere.setEmmission(new Color(0, 0, 100));
-        sphere.setKt(0.5);
+        sphere.setKt(0.7);
         scene.addGeometry(sphere);
 
         Sphere sphere2 = new Sphere(150, new Point3D(-550, -500, -1000));
         sphere2.setShininess(20);
-        sphere2.setEmmission(new Color(100, 20, 20));
-        sphere2.setKt(0);
+        sphere2.setEmmission(new Color(255, 14, 190));
+        sphere2.setKt(0.7); // זכוכית - רואה דרך
         scene.addGeometry(sphere2);
 
         Triangle triangle = new Triangle(new Point3D(  1500, -1500, -1500),
@@ -70,15 +70,15 @@ public class RecursiveTest
                 new Point3D( -1500,  1500, -1500),
                 new Point3D( -1500, -1500, -1500));
 
-        triangle.setEmmission(new Color(20, 20, 20));
-        triangle2.setEmmission(new Color(20, 20, 20));
-        triangle.setKr(1);
+        triangle.setEmmission(new Color(20, 19, 21));
+        triangle2.setEmmission(new Color(19, 19, 20));
+        triangle.setKr(0.4);// השתקפות - כמו מראה
         triangle2.setKr(0.5);
         scene.addGeometry(triangle);
         scene.addGeometry(triangle2);
 
         scene.addLight(new SpotLight(new Color(255, 100, 100),  new Point3D(200, 200, -150),
-                new Vector(-2, -2, -3), 0, 0.00001, 0.000005));
+                new Vector(-2, -2, -3), 0, 0.001, 0.000005));
 
         ImageWriter imageWriter = new ImageWriter("Recursive Test 2", 500, 500, 500, 500);
 
@@ -102,7 +102,7 @@ public class RecursiveTest
         Sphere sphere2 = new Sphere(150, new Point3D(0, 0, -1000));
         sphere2.setShininess(20);
         sphere2.setEmmission(new Color(100, 20, 20));
-        sphere2.setKt(0);
+        sphere2.setKt(0.5);
         scene.addGeometry(sphere2);
 
         Triangle triangle = new Triangle(new Point3D(  2000, -1000, -1500),
@@ -116,7 +116,7 @@ public class RecursiveTest
         triangle.setEmmission(new Color(20, 20, 20));
         triangle2.setEmmission(new Color(20, 20, 20));
         triangle.setKr(1);
-        triangle2.setKr(0.5);
+        triangle2.setKr(1);
         scene.addGeometry(triangle);
         scene.addGeometry(triangle2);
 
