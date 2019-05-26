@@ -60,7 +60,8 @@ public class PointLight extends Light implements LightSource {
     @Override
     public Color getIntensity(Point3D point) {
         Vector v=new Vector(point);
-       v = v.subtract(new Vector(_position));
+        Vector pos = new Vector(_position);
+       v = v.subtract(pos);
         double d=v.length();
         double divider=_Kc+_Kl*d+_Kq*d*d;
         double r,g,b;
@@ -73,16 +74,18 @@ public class PointLight extends Light implements LightSource {
     @Override
     public Vector getL(Point3D point)
     {
-        Vector lVector= new Vector(_position,point);
-        try{
-            lVector.normalize();
-        }
-        catch(ArithmeticException e)
-        {
-            return null;
-        }
+        Vector poi= new Vector(point);
+        Vector pos = new Vector(_position);
+        return poi.subtract(pos);
+        //try{
+          //  lVector.normalize();
+        //}
+        //catch(ArithmeticException e)
+        //{
+         //   return null;
+        //}
 
-        return lVector;
+        //return lVector;
 
     }
 

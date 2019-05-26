@@ -190,6 +190,7 @@ public class Triangle extends Geometry implements FlatGeometry {
         }
         Plane t_plane = new Plane(getNormal(_p2), _p2);
         ArrayList<Point3D> answer = (ArrayList<Point3D>) (t_plane.FindIntersections(ray));
+        //TODO  ********** this is my problem in SHADOW TEST, and in recursiveTest 02 ********
         if (answer.isEmpty()) {
             return new ArrayList<>();
         }

@@ -156,7 +156,7 @@ public class Sphere extends RadialGeometry
         }
         catch(ArithmeticException e)
         {
-            return null;
+//            return null;
         }
         return ans;
     }

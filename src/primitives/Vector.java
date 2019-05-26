@@ -135,8 +135,9 @@ public class Vector implements Comparable<Vector> {
 
     public Vector subtract(Vector vector)
     {
-        Vector tmp = new Vector(this);
-        return tmp._head.subtract(vector._head);
+        return new Vector(this._head.subtract(vector._head));
+      //  Vector tmp = new Vector(this);
+       // return tmp._head.subtract(vector._head);
     }
     /**
      Scaling Vector For Given Factor

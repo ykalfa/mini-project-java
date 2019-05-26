@@ -116,7 +116,9 @@ public class Plane extends Geometry implements FlatGeometry
         ArrayList<Point3D> ansList=new ArrayList();//
         //if the ray has the same direction as the plane so we dont have intersections
         if(_normal.dotProduct(ray.getDirection())==0) // if the vector is 90' to the plane so we not have a intersection
-            return null; //return empty list
+        //TODO MAYBE WE NEED RETURN NULL HERE 26/05/19 11:15
+            return new ArrayList<>(); //return empty list
+
         double t=-(_normal.dotProduct(p2rVector)/(_normal.dotProduct(ray.getDirection())));   //   -N * (P0-Q0)/(N*V)
         Vector copyDirection=new Vector(ray.getDirection()); // copy of V
         copyDirection.scale(t); // t*V
@@ -124,7 +126,7 @@ public class Plane extends Geometry implements FlatGeometry
         p2rVector = p2rVector.add(copyDirection); //p2rVector start from P0 , and we add to him t*V , and we get P. (the cut point with the plane)
         Point3D ans= new Point3D(p2rVector.getHead());
         if(t<0)
-            return null;
+            return new ArrayList<>();
         ansList.add(ans); // add P to ansList (ArrayList of the cut point with the plane)
         return ansList;
     }
