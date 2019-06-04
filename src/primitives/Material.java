@@ -1,19 +1,20 @@
 package primitives;
 
-/**
- Class Represents Material
+/*
+ *
+ * Class Represents kind of Material
+ *
  */
-public class Material
-{
+public class Material {
+
     private double _Kd; // Diffusion attenuation coefficient
     private double _Ks; // Specular attenuation coefficient
     private double _Kr; // Reflection coefficient (1 for mirror)
     private double _Kt; // Refraction coefficient (1 for transparent)
     private double _n; // Refraction index
+
     // ***************** Constructors ********************** //
-    /**
-     Default Constractor
-     */
+
     public Material()
     {
         _Kd = 1;
@@ -22,97 +23,55 @@ public class Material
         _Kt = 0;
         _n = 1;
     }
-    /**
-     Copy Constractor
-     @param material
-     */
-    public Material(Material material)
+    public Material(Material m)
     {
-        _Kd = material._Kd;
-        _Ks = material._Ks;
-        _Kr = material._Kr;
-        _Kt = material._Kt;
-        _n = material._n;
-    }
+        _Kd = m._Kd;
+        _Ks = m._Ks;
+        _Kr = m._Kr;
+        _Kt = m._Kt;
+        _n = m._n;
+    };
+
     // ***************** Getters/Setters ********************** //
-    /**
-     Get Material KD
-     @return
-     */
-    public double getKd()
-    {
+
+    public double get_Kd() {
         return _Kd;
     }
-    /**
-     Get Material Ks
-     @return
-     */
-    public double getKs()
-    {
+
+    public void set_Kd(double _Kd) {
+        this._Kd = _Kd;
+    }
+
+    public double get_Ks() {
         return _Ks;
     }
-    /**
-     Get Material Kr
-     @return
-     */
-    public double getKr()
-    {
+
+    public void set_Ks(double _Ks) {
+        this._Ks = _Ks;
+    }
+
+    public double get_Kr() {
         return _Kr;
     }
-    /**
-     Get Material Kt
-     @return
-     */
-    public double getKt()
-    {
+
+    public void set_Kr(double _Kr) {
+        this._Kr = _Kr;
+    }
+
+    public double get_Kt() {
         return _Kt;
     }
-    /**
-     Get Material n
-     @return
-     */
-    public double getN()
-    {
+
+    public void set_Kt(double _Kt) {
+        this._Kt = _Kt;
+    }
+
+    public double get_n() {
         return _n;
     }
-    /**
-     Set Material KD
-     @param _Kd Double To Set
-     */
-    public void setKd(double _Kd)
-    {
-        this._Kd=_Kd;
+
+    public void set_n(double _n) {
+        this._n = _n;
     }
-    /**
-     Set Material Ks
-     @param _Ks Double To Set
-     */
-    public void setKs(double _Ks)
-    {
-        this._Ks=_Ks;
-    }
-    /**
-     Set Material Kr
-     @param _Kr Double To Set
-     */
-    public void setKr(double _Kr)
-    {
-        this._Kr=_Kr;
-    }
-    /**
-     Set Material Kt
-     @param _Kt Double To Set
-     */
-    public void setKt(double _Kt)
-    {
-        this._Kt=_Kt;
-    }
-    /**
-     Set Material N
-     @param _n Double To Set
-     */
-    public void setN (double _n)
-    {
-        this._n=_n;
-    }
+
 }

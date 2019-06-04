@@ -1,68 +1,58 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package elements;
+import primitives.Point3D;
+import primitives.Vector;
+import java.awt.*;
 
-import primitives.*;
-import java.awt.Color;
-
-/**
- *
- */
 public class SpotLight extends PointLight implements LightSource {
 
     private Vector _direction;
+
 // ***************** Constructor ********************** //
 
     /**
-     * Constractor
-     * Set Light: Color, Position, direction and Constants By given parameters.
-     *
-     * @param color Color To set as  light color
-     * @param position  Point3D to set as light position
-     * @param direction Vector To set as light Direction
-     * @param kc    double to set as light kc Constant
-     * @param kl    double to set as light kl Constant
-     * @param kq    double to set as light kq Constant
+     * Constructor
+     * Set Light by parameters: Color, Position, direction and Constants.
      */
-    public SpotLight(Color color, Point3D position, Vector direction, double kc, double kl, double kq) {
+    public SpotLight(Color color, Point3D position, Vector direction, double kc, double kl, double kq)
+    {
         super(color,position,kc,kl,kq);
         _direction = new Vector(direction);
     }
+
 // ***************** Getters/Setters ********************** //
 
     /**
-     * Calculate this Point Intensity
+     * * FUNCTION
+     * * getIntensity - find Light's Point Intensity
+     * * PARAMETERS
+     * * Point3D
+     * * RETURN
+     * * Color - color in the Point.
      * Process:
-     * 1. get Distance from Light To Point
-     * 2. Claculate the divider by _Kc+_Kl*d+_Kq*d*d
-     * 3. set multi to be the dot product of Vector from light to point and the light direction
-     * 4. Multiple RGB Values of this Color By the multi
-     * 5. divide 4 by the divider (line 2)
-     * 6. return the Color.
-     *
-     * @param point
-     * @return
+     * 1. d =  Distance from Light To Point
+     * 2. div = the divider: _Kc+_Kl*d+_Kq*d*d
+     * 3. dotProduct = dot product of the Vector from light to point and the vector light direction
+     * 4. r,g,b = RGB Values and multiple them by the dotProduct
+     * 5. find the color of the point : divide RGB with div
+     * 6. return the Color in the Point.
      */
     @Override
     public Color getIntensity(Point3D point) {
-        Vector v = new Vector(_position, point);
+        Vector v = new Vector(point,_position);
         double d = v.length();
-        double divider = _Kc + _Kl * d + _Kq * d * d;
-        Vector directionCpy = new Vector(_direction);
-        try {
-            directionCpy.normalize();
-            v.normalize();
-        } catch (ArithmeticException e) {
+        double div = _Kc + _Kl * d + _Kq * d * d;
+        Vector directionTemp = new Vector(_direction);
+        try
+        {
+            directionTemp = directionTemp.normalize();
+            v = v.normalize();
+        } catch (ArithmeticException e) { }
+        double dotProduct = directionTemp.dotProduct(v);
+        int r, g, b;
+        r = (int)(_color.getRed() * dotProduct/div);
+        g = (int)(_color.getGreen() * dotProduct/div);
+        b = (int)(_color.getBlue() * dotProduct/div);
 
-        }
-        double r, g, b;
-        double multi = v.dotProduct(directionCpy);
-        r = _color.getRed() * multi;
-        g = _color.getGreen() * multi;
-        b = _color.getBlue() * multi;
-        return Tools.giveColor(r / divider, g / divider, b / divider);
+        return new Color(r>255 ? 255 : (r<0? 0:r), g>255?255:(g<0? 0:g), b>255?255:(b<0? 0:b));
     }
 }

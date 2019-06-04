@@ -1,55 +1,49 @@
 /*
---------
---------
-צריך לוודא שהמחלקה הזאת עובדת כמו שצריך !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! בגלל שהיא לא משתמשמת עם LightSource
---------
---------
-
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package scene;
 
-import java.awt.Color;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 import elements.AmbientLight;
 import elements.Camera;
 import elements.LightSource;
 import geometries.Geometry;
 
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 /**
  * Class represents Scene
- * with this class we gather all the thing to represent a Scene for our priject
- *
- * it has:
+ * Include:
+ * background color
+ * ambient light
  * list of geometries
- * list of lists
  * camera
  * distance from camera
- * backgroung color
- * ambiantlite
+ * list of light sources
  * and Scene name
  */
 public class Scene {
 
     private Color _background;
     private AmbientLight _ambientLight;
-    private List<Geometry> _geometries = new ArrayList<Geometry>();
-    private List<LightSource> _lights = new ArrayList<LightSource>();
+    public List<Geometry> _geometries = new ArrayList<Geometry>();
     private Camera _camera;
     private double _screenDistance;
+    private List<LightSource> _lights = new ArrayList<LightSource>();
     private String _sceneName = "scene";
+
 // ***************** Constructors ********************** //
     /**
-     * Default Constractor
+     * Default Constructor
      *
-     * set the class paramters to thier default values:
-     * backgroung to White
-     * distance to 1
-     * and the rest by thier default constractor
+     * set the class fields to their default values:
+     * background to black
+     * distance to 100
+     * and the rest by their default constructor
      */
     public Scene()
     {
@@ -57,13 +51,10 @@ public class Scene {
         _ambientLight =new AmbientLight();
         _camera=new Camera();
         _screenDistance=100;
-
     }
+
     /**
-     * Copy Constracor
-     * Copy the values from Scene object to our class parameters
-     *
-     * @param scene Scene Object To Copy
+     * Copy Constructor
      */
     public Scene(Scene scene)
     {
@@ -78,15 +69,10 @@ public class Scene {
     }
 
     /**
-     * Contractor
-     * get:
-     * ambiantLight, background color,camera, distance from screen
-     * snd set them to the class parameters
-     *
-     * @param aLight ambiantlight to set
-     * @param background Color to set as background color
-     * @param camera Camera object to set
-     * @param screenDistance double represents the distance between the camera and the screen
+     * Constructor
+     * gets:
+     * Ambient light, background color,camera, distance from screen
+     * snd sets them to the class parameters
      */
     public Scene(AmbientLight aLight, Color background,
                  Camera camera, double screenDistance)
@@ -95,113 +81,48 @@ public class Scene {
         _ambientLight =new AmbientLight(aLight);
         _camera=new Camera(camera);
         _screenDistance=screenDistance;
-
     }
 
 // ***************** Getters/Setters ********************** //
-    /**
-     * return Color represnts the background color of the Scene
-     *
-     * @return Color represents Scene background
-     */
-    public Color getBackground()
-    {
-        return _background;
 
-    }
-    /**
-     * return the Ambiantlight of this class
-     * @return AmbientLight represents this class AmbientLight
-     */
-    public AmbientLight getAmbientLight()
-    {
-        return _ambientLight;
+    public Color getBackground() { return _background; }
+    public AmbientLight getAmbientLight() { return _ambientLight; }
+    public Camera getCamera() { return _camera; }
+    public String getSceneName() { return _sceneName; }
+    public double getScreenDistance() { return _screenDistance; }
 
-    }
-    /**
-     * return Camera represnts this class camera object
-     * @return Camera represnts this class camera object
-     */
-    public Camera getCamera()
-    {
-        return _camera;
-
-    }
-    /**
-     * return this class Name
-     * @return String represents this class name
-     */
-    public String getSceneName()
-    {
-        return _sceneName;
-
-    }
-    /**
-     * return Double represents this class distance form screen
-     * @return Double represents the distance between the camera and the screen
-     */
-    public double getScreenDistance()
-    {
-        return _screenDistance;
-
-    }
-    /**
-     * set this class background color
-     * @param _background Color to set as background color
-     */
     public void setBackground(Color _background)
     {
         this._background=new Color(_background.getRGB());
-
     }
-    /**
-     * set this class ambiant light
-     * @param ambientLight AmbientLight to set as this class ambiant light
-     */
     public void setAmbientLight(AmbientLight ambientLight)
     {
         _ambientLight=new AmbientLight(ambientLight);
-
     }
-    /**
-     * set this class camera
-     * @param camera Camera to set as this class camera
-     */
     public void setCamera(Camera camera)
     {
         _camera=new Camera(camera);
-
     }
-    /**
-     * set this class Scene Name
-     * @param sceneNAme String To set as this class Scene Name
-     */
     public void setSceneName(String sceneNAme)
     {
         _sceneName=sceneNAme;
-
     }
-    /**
-     * set screen distance
-     * @param screenDistance double to set as the distance between the camera and the screen
-     */
     public void setScreenDistance(double screenDistance)
     {
         _screenDistance=screenDistance;
-
     }
+
 // ***************** Operations ******************** //
     /**
-     * add geometry to this class list og geometries
-     * @param geometry geometry to add to the list
+     * add geometry to this scene geometries's list
      */
     public void addGeometry(Geometry geometry)
     {
         _geometries.add(geometry);
     }
+
     /**
      * return iterator that runs over the geometries's list
-     * @return Iterator for Geometries list
      */
     public Iterator<Geometry> getGeometriesIterator()
     {
@@ -209,22 +130,19 @@ public class Scene {
     }
 
     /**
-     * add light to this class Light list
-     * @param light LightSource to add to this class list
+     * add light to this class lights's list
      */
     public void addLight(LightSource light)
     {
         _lights.add(light);
     }
+
     /**
-     * return iterator for the lights list
-     * @return Iterator for Light list
+     * return iterator of the lights's list
      */
     public Iterator<LightSource> getLightsIterator()
     {
         return _lights.iterator();
     }
-
-
 
 }

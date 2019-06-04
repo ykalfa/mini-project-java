@@ -1,143 +1,115 @@
 package primitives;
 
-/**
- * Class Represents Point In 3D.
+/*
+ *
+ * Class Represents Point in 3D
+ *
  */
-public class Point3D extends Point2D {
-    //the Extanded z_ coordinate for Point in 3D
-    public Coordinate _z;
+public class Point3D extends Point2D implements Comparable
+{
+    protected Coordinate _z;
+
     // ***************** Constructors ********************** //
 
-    /**
-     * Default Constractor
-     */
+    public Point3D(Coordinate _x, Coordinate _y, Coordinate _z) {
+        super(_x, _y);
+        this._z = new Coordinate(_z);
+    }
+
     public Point3D() {
-        super();
-        _z = new Coordinate();
+        this._z = new Coordinate();
     }
 
-    /**
-     * Constractor Get 3 Coordinate To Set Point.
-     * @param x X Coordinate
-     * @param y Y Coordinate
-     * @param z Z Coordinate
-     */
-    public Point3D(Coordinate x, Coordinate y, Coordinate z) {
-        super(x, y);
-        _z = new Coordinate(z);
+    public Point3D(double _x, double _y, double z) {
+        super(new Coordinate(_x),new Coordinate(_y));
+        this._z =  new Coordinate(z);
     }
 
-    /**
-     * Constractor Get 3 Doubles To Set Point
-     * @param x X Number
-     * @param y Y Number
-     * @param z Z Number
-     */
-    public Point3D(double x, double y, double z) {
-        super(new Coordinate(x), new Coordinate(y));
-        _z = new Coordinate(z);
-    }
-
-    /**
-     * Copy Constractor
-     * @param point3D Point To Copy
-     */
     public Point3D(Point3D point3D) {
-        super(new Coordinate(point3D._x), new Coordinate(point3D._y));
+        super(new Coordinate(point3D._x),new Coordinate(point3D._y));
         _z = new Coordinate(point3D._z);
     }
+
     // ***************** Getters/Setters ********************** //
 
-    /**
-     * Get Z Coordinate
-     * @return Z coordinate of the class
-     */
-    public Coordinate getZ() {
+    public Coordinate get_z() {
         return _z;
     }
 
-    /**
-     * Set Z Coordinate
-     *
-     * @param _z z coordinate to set
-     */
-    public void setZ(Coordinate _z) {
-        this._z = new Coordinate(_z);
+    public void set_z(Coordinate _z) {
+        this._z = _z;
     }
+
     // ***************** Administration ******************** //
 
-    /**
-     * @param point3D
-     * @return 0 if equals or -1 if not equals
-     */
-    public int compareTo(Point3D point3D) {
-        /*if (!(point3D instanceof Point3D)) {
-            return -1;
-        }*/
-        Point2D tp = new Point2D(point3D);
-        Point2D tp3 = new Point2D(this);
-
-        return (tp3.compareTo(tp) + _z.compareTo((point3D)._z)) == 0 ? 0 : -1;
-    }
-
     @Override
-    /**
-     * Override System to string Method
-     * @return string represents the class
-     */
     public String toString() {
-        return String.format("(%.2f, %.2f, %.2f)", _x.getCoordinate(), _y.getCoordinate(), _z.getCoordinate());
+        return String.format("(%.2f, %.2f, %.2f)", _x._coord , _y._coord ,_z._coord);
     }
+
+    /**
+     * * FUNCTION
+     * * compareTo
+     * * PARAMETERS
+     * * obj – object to compare
+     * * RETURN VALUE
+     * * 0 if equals 1 if not equals
+     * * MEANING
+     * * Compare 2 elements of the Class Point3D
+     */
+    @Override
+    public int compareTo(Object obj)
+    {
+        if (obj == null) return 1;
+        if (!(obj instanceof Point3D)) return 1;
+        if ((this._x.compareTo(((Point3D)obj)._x) == 0)&&(this._y.compareTo(((Point3D)obj)._y) == 0)&&(this._z.compareTo(((Point3D)obj)._z) == 0))
+            return 0;
+        return 1;
+    }
+
+
     // ***************** Operations ******************** //
 
     /**
-     * Add Vector To Point.
-     * this class point moves to the head of the Vector given.
-     * if it where to start from this point.
-     * @param vector Vector to add To this class Point
+     * * FUNCTION
+     * * add
+     * * PARAMETERS
+     * * vector - Vector to add To this class Point
+     * * RETURN VALUE
+     * * none
+     * * MEANING
+     * * Add Vector To Point.
      */
-    public Point3D add(Vector vector) {
-      Point3D tmp = new Point3D();
-        tmp._x=_x.add(vector.getHead()._x);
-        tmp._y=_y.add(vector.getHead()._y);
-        tmp._z=_z.add(vector.getHead()._z);
-        return tmp;
+    public Point3D add(Vector v) {
+        return  new Point3D(this._x.add( v.get_head()._x), this._y.add( v.get_head()._y), this._z.add( v.get_head()._z));
     }
-    //----------------ייתכן שזה מיותר--------------
-/*   public Point3D add(Point3D point)
-   {
-       Point3D tmp= new Point3D();
-       tmp._x.add(point._x);
-       tmp._y.add(point._y);
-       tmp._z.add(point._z);
-       return tmp;
-}*/
-//-----------------------------------*/
+
     /**
-     * Substract Vector From Point
-     * Point move to the start of the Vector
-     * if the vector head where to end at the class point
-     * @param point Vector to substract
+     * * FUNCTION
+     * * subtract
+     * * PARAMETERS
+     * * v - Vector to subtract
+     * * RETURN VALUE
+     * * none
+     * * MEANING
+     * * subtract Vector From current Point
      */
-    public Vector subtract(Point3D point)
+    public Point3D subtract(Vector v)
     {
-        Vector tmp = new Vector(this);
-        tmp.getHead()._x = tmp.getHead()._x.subtract(point._x);
-        tmp.getHead()._y =tmp.getHead()._y.subtract(point._y);
-        tmp.getHead()._z =tmp.getHead()._z.subtract(point._z);
-        return tmp;
+        return  new Point3D(this._x.subtract( v.get_head()._x), this._y.subtract( v.get_head()._y), this._z.subtract( v.get_head()._z));
     }
 
-
     /**
-     * Calculate Distance Between 2 Points
-     * Uses Pitagoras formula.
-     * @param vector Point3D To Find
-     * @return the double represents the Distance Between 2 Points
+     * * FUNCTION
+     * * distance
+     * * PARAMETERS
+     * * p - Point3D to check distance with current Point3D
+     * * RETURN VALUE
+     * * double (result of distance calculation)
+     * * MEANING
+     * * calculate distance between current point to another point
      */
-    public double distance(Point3D vector) {
-        Point3D point3d = new Point3D(this);
-       point3d.subtract(new Point3D(vector));
-        return Math.sqrt(Math.pow(point3d._x.getCoordinate(), 2) + Math.pow(point3d._y.getCoordinate(), 2) + Math.pow(point3d._z.getCoordinate(), 2));
+    public double distance(Point3D p) {
+        return Math.sqrt(Math.pow(p._x.subtract( this._x)._coord, 2) + Math.pow(p._y.subtract( this._y)._coord, 2) + Math.pow(p._z.subtract( this._z)._coord, 2));
     }
 }

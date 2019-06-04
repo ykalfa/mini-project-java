@@ -7,14 +7,62 @@
       <change beforePath="$PROJECT_DIR$/Recursive Test 2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Recursive Test 2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Recursive Test 3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Recursive Test 3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shadow test.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Shadow test.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Tests/RecursiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Tests/RecursiveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Tests/Level_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Tests/Level_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Tests/RecursiveTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/Tests/shadowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Tests/shadowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/elements/AmbientLight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/elements/AmbientLight.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/elements/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/elements/Camera.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/elements/DirectionalLight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/elements/DirectionalLight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/elements/Light.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/elements/Light.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/elements/PointLight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/elements/PointLight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/elements/SpotLight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/elements/SpotLight.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Geometry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Geometry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/se5779-01-3121-4448/Tests/RecursiveTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/se5779-01-3121-4448/Tests/RecursiveTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Plane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Plane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Quadrangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Quadrangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/RadialGeometry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/RadialGeometry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Sphere.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Sphere.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/geometries/Triangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/Coordinate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/Coordinate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/Material.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/Material.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/Point2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/Point2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/Point3D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/Point3D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/Ray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/Ray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/Vector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/Vector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/test/Point3DTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/test/VectorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/primitives/test/VectorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/renderer/ImageWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/renderer/ImageWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/renderer/Render.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/renderer/Render.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/scene/Scene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/se5779-01-3121-4448/scene/Scene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/se5779-01-3121-4448/Tests/Level_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/se5779-01-3121-4448/Tests/Level_3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/se5779-01-3121-4448/Tests/RecursiveTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/se5779-01-3121-4448/Tests/shadowTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/se5779-01-3121-4448/Tests/shadowTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/AmbientLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/AmbientLight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elements/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/DirectionalLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/DirectionalLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Light.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Light.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/LightSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/LightSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/PointLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/PointLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/SpotLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/SpotLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/FlatGeometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/FlatGeometry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/geometries/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Geometry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Intersectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Intersectable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Plane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Quadrangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Quadrangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/RadialGeometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/RadialGeometry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Sphere.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Coordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Material.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Point2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Point2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Point3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Point3D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Ray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Vector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/test/Point3DTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/ImageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/ImageWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/Render.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Render.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scene/Scene.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,97 +129,7 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shadow test.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scene 1 lights.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tests/Tests/Level_3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="143" column="37" lean-forward="true" selection-start-line="143" selection-start-column="37" selection-end-line="143" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - יעקב ונריה/project_camera/src/tests/VectorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="279" column="1" selection-start-line="279" selection-start-column="1" selection-end-line="281" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/elements/Camera.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/primitives/Point3D.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-              <folding>
-                <element signature="e#1328#1329#0" expanded="true" />
-                <element signature="e#1353#1354#0" expanded="true" />
-                <element signature="e#1476#1477#0" expanded="true" />
-                <element signature="e#1520#1521#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/primitives/Point2D.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-              <folding>
-                <element signature="e#1107#1108#0" expanded="true" />
-                <element signature="e#1132#1133#0" expanded="true" />
-                <element signature="e#1249#1250#0" expanded="true" />
-                <element signature="e#1274#1275#0" expanded="true" />
-                <element signature="e#1395#1396#0" expanded="true" />
-                <element signature="e#1439#1440#0" expanded="true" />
-                <element signature="e#1556#1557#0" expanded="true" />
-                <element signature="e#1600#1601#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recursive Test 2.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recursive Test 11.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recursive Test 3.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -206,16 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/primitives/Coordinate.java" />
-        <option value="$PROJECT_DIR$/src/primitives/Util.java" />
-        <option value="$PROJECT_DIR$/src/primitives/Ray.java" />
-        <option value="$PROJECT_DIR$/src/primitives/Coordinate.java" />
-        <option value="$PROJECT_DIR$/Tests/primitives/VectorTest.java" />
-        <option value="$PROJECT_DIR$/src/primitives/Point3DTest.java" />
-        <option value="$PROJECT_DIR$/src/primitives/VectorTest.java" />
-        <option value="$PROJECT_DIR$/src/primitives/Point2D.java" />
-        <option value="$PROJECT_DIR$/src/geometries/FlatGeometry.java" />
-        <option value="$PROJECT_DIR$/src/geometries/Intersectable.java" />
         <option value="$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/renderer/Render.java" />
         <option value="$PROJECT_DIR$/src/primitives/Tests/Point3DTest.java" />
         <option value="$PROJECT_DIR$/src/primitives/Tests/VectorTest.java" />
@@ -223,40 +171,50 @@
         <option value="$PROJECT_DIR$/src/Tests/primitives/VectorTest.java" />
         <option value="$PROJECT_DIR$/Tests/geometries/TriangleTest.java" />
         <option value="$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/test/geometries/TriangleTest.java" />
-        <option value="$PROJECT_DIR$/src/primitives/Point3D.java" />
         <option value="$PROJECT_DIR$/src/primitives/test/VectorTest.java" />
-        <option value="$PROJECT_DIR$/src/renderer/ImageWriter.java" />
         <option value="$PROJECT_DIR$/Tests/renderer/ImageWriterTest.java" />
         <option value="$PROJECT_DIR$/Tests/elements/emmisonTest.java" />
         <option value="$PROJECT_DIR$/src/renderer/Tests/ImageWriterTest.java" />
         <option value="$PROJECT_DIR$/Tests/geometries/CollectionTest.java" />
         <option value="$PROJECT_DIR$/Tests/Tests/CollectionTest.java" />
         <option value="$PROJECT_DIR$/src/primitives/test/VectorTest.java" />
-        <option value="$PROJECT_DIR$/src/geometries/RadialGeometry.java" />
-        <option value="$PROJECT_DIR$/src/elements/AmbientLight.java" />
         <option value="$PROJECT_DIR$/src/geometries/test/PlaneTest.java" />
-        <option value="$PROJECT_DIR$/src/elements/Light.java" />
         <option value="$PROJECT_DIR$/src/geometries/test/TriangleTest.java" />
-        <option value="$PROJECT_DIR$/src/geometries/Quadrangle.java" />
-        <option value="$PROJECT_DIR$/src/elements/DirectionalLight.java" />
-        <option value="$PROJECT_DIR$/src/elements/LightSource.java" />
-        <option value="$PROJECT_DIR$/src/scene/Scene.java" />
         <option value="$PROJECT_DIR$/src/primitives/Tools.java" />
         <option value="$PROJECT_DIR$/Tests/Tests/Tests.java" />
-        <option value="$PROJECT_DIR$/src/elements/SpotLight.java" />
-        <option value="$PROJECT_DIR$/src/geometries/Triangle.java" />
-        <option value="$PROJECT_DIR$/src/geometries/Triangle.java" />
-        <option value="$PROJECT_DIR$/src/geometries/Sphere.java" />
-        <option value="$PROJECT_DIR$/src/geometries/Plane.java" />
-        <option value="$PROJECT_DIR$/src/primitives/Vector.java" />
-        <option value="$PROJECT_DIR$/src/elements/PointLight.java" />
-        <option value="$PROJECT_DIR$/src/primitives/Material.java" />
-        <option value="$PROJECT_DIR$/Tests/Tests/shadowTest.java" />
-        <option value="$PROJECT_DIR$/src/geometries/Geometry.java" />
         <option value="$PROJECT_DIR$/Tests/Tests/RecursiveTest.java" />
-        <option value="$PROJECT_DIR$/src/renderer/Render.java" />
-        <option value="$PROJECT_DIR$/src/elements/Camera.java" />
+        <option value="$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - יעקב ונריה/project_camera/src/tests/VectorTest.java" />
+        <option value="$PROJECT_DIR$/src/renderer/ImageWriter.java" />
+        <option value="$PROJECT_DIR$/src/scene/Scene.java" />
+        <option value="$PROJECT_DIR$/src/primitives/test/Point3DTest.java" />
+        <option value="$PROJECT_DIR$/Tests/Tests/shadowTest.java" />
         <option value="$PROJECT_DIR$/Tests/Tests/Level_3.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Coordinate.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Material.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Point2D.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Point3D.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Ray.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Util.java" />
+        <option value="$PROJECT_DIR$/src/primitives/Vector.java" />
+        <option value="$PROJECT_DIR$/src/geometries/FlatGeometry.java" />
+        <option value="$PROJECT_DIR$/src/geometries/Geometry.java" />
+        <option value="$PROJECT_DIR$/src/geometries/Intersectable.java" />
+        <option value="$PROJECT_DIR$/src/geometries/Plane.java" />
+        <option value="$PROJECT_DIR$/src/geometries/Quadrangle.java" />
+        <option value="$PROJECT_DIR$/src/geometries/RadialGeometry.java" />
+        <option value="$PROJECT_DIR$/src/geometries/Sphere.java" />
+        <option value="$PROJECT_DIR$/src/geometries/Triangle.java" />
+        <option value="$PROJECT_DIR$/src/geometries/Triangle.java" />
+        <option value="$PROJECT_DIR$/src/geometries/Cylinder.java" />
+        <option value="$PROJECT_DIR$/src/geometries/Tube.java" />
+        <option value="$PROJECT_DIR$/src/elements/AmbientLight.java" />
+        <option value="$PROJECT_DIR$/src/elements/Camera.java" />
+        <option value="$PROJECT_DIR$/src/elements/DirectionalLight.java" />
+        <option value="$PROJECT_DIR$/src/elements/Light.java" />
+        <option value="$PROJECT_DIR$/src/elements/LightSource.java" />
+        <option value="$PROJECT_DIR$/src/elements/PointLight.java" />
+        <option value="$PROJECT_DIR$/src/elements/SpotLight.java" />
+        <option value="$PROJECT_DIR$/src/renderer/Render.java" />
       </list>
     </option>
   </component>
@@ -268,7 +226,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="20" />
+    <option name="x" value="-10" />
     <option name="width" value="1280" />
     <option name="height" value="735" />
   </component>
@@ -281,7 +239,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,41 +255,13 @@
               <item name="mini-project-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="mini-project-java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="elements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mini-project-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mini-project-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="primitives" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mini-project-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mini-project-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="renderer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mini-project-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mini-project-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scene" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mini-project-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mini-project-java" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mini-project-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mini-project-java" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -349,7 +278,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558893991600" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559634232880" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -389,7 +318,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Level_3.lightTest01">
+  <component name="RunManager" selected="JUnit.Level_3.level3_06">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -430,6 +359,86 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Level_3.level3_03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="se5779-01-3121-4448" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Level_3" />
+      <option name="METHOD_NAME" value="level3_03" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Level_3.level3_04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="se5779-01-3121-4448" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Level_3" />
+      <option name="METHOD_NAME" value="level3_04" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Level_3.level3_05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="se5779-01-3121-4448" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Level_3" />
+      <option name="METHOD_NAME" value="level3_05" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Level_3.level3_06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="se5779-01-3121-4448" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Level_3" />
+      <option name="METHOD_NAME" value="level3_06" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Level_3.lightTest01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="se5779-01-3121-4448" />
       <extension name="coverage">
@@ -441,86 +450,6 @@
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.Level_3" />
       <option name="METHOD_NAME" value="lightTest01" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Level_3.lightTest02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="se5779-01-3121-4448" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Level_3" />
-      <option name="METHOD_NAME" value="lightTest02" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Level_3.lightTest03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="se5779-01-3121-4448" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Level_3" />
-      <option name="METHOD_NAME" value="lightTest03" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecursiveTest.recursiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="se5779-01-3121-4448" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.RecursiveTest" />
-      <option name="METHOD_NAME" value="recursiveTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecursiveTest.recursiveTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="se5779-01-3121-4448" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.RecursiveTest" />
-      <option name="METHOD_NAME" value="recursiveTest2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -563,19 +492,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.RecursiveTest.recursiveTest2" />
-      <item itemvalue="JUnit.RecursiveTest.recursiveTest" />
+      <item itemvalue="JUnit.Level_3.level3_03" />
+      <item itemvalue="JUnit.Level_3.level3_04" />
+      <item itemvalue="JUnit.Level_3.level3_05" />
+      <item itemvalue="JUnit.Level_3.level3_06" />
       <item itemvalue="JUnit.Level_3.lightTest01" />
-      <item itemvalue="JUnit.Level_3.lightTest02" />
-      <item itemvalue="JUnit.Level_3.lightTest03" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Level_3.level3_06" />
+        <item itemvalue="JUnit.Level_3.level3_05" />
+        <item itemvalue="JUnit.Level_3.level3_03" />
+        <item itemvalue="JUnit.Level_3.level3_04" />
         <item itemvalue="JUnit.Level_3.lightTest01" />
-        <item itemvalue="JUnit.Level_3.lightTest02" />
-        <item itemvalue="JUnit.Level_3.lightTest03" />
-        <item itemvalue="JUnit.RecursiveTest.recursiveTest" />
-        <item itemvalue="JUnit.RecursiveTest.recursiveTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -594,86 +523,86 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 28m 46s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_03 - 2019.05.29 at 13h 38m 26s.xml">
+      <configuration name="Level_3.level3_03" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 29m 55s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_03 - 2019.05.29 at 13h 38m 48s.xml">
+      <configuration name="Level_3.level3_03" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 30m 24s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_03 - 2019.05.29 at 13h 39m 27s.xml">
+      <configuration name="Level_3.level3_03" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 34m 06s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_03 - 2019.05.29 at 13h 40m 03s.xml">
+      <configuration name="Level_3.level3_03" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 34m 42s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_03 - 2019.05.29 at 13h 40m 28s.xml">
+      <configuration name="Level_3.level3_03" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 35m 25s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_03 - 2019.05.29 at 13h 40m 57s.xml">
+      <configuration name="Level_3.level3_03" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 36m 07s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_03 - 2019.05.29 at 13h 41m 32s.xml">
+      <configuration name="Level_3.level3_03" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 36m 50s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_03 - 2019.05.29 at 13h 42m 07s.xml">
+      <configuration name="Level_3.level3_03" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 37m 21s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_03 - 2019.05.29 at 13h 42m 26s.xml">
+      <configuration name="Level_3.level3_03" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 38m 06s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_03 - 2019.05.29 at 13h 42m 49s.xml">
+      <configuration name="Level_3.level3_03" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 39m 57s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_03 - 2019.05.29 at 13h 43m 09s.xml">
+      <configuration name="Level_3.level3_03" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest03 - 2019.05.26 at 20h 42m 02s.xml">
-      <configuration name="Level_3.lightTest03" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_03 - 2019.05.29 at 13h 48m 32s.xml">
+      <configuration name="Level_3.level3_03" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest03 - 2019.05.26 at 20h 42m 45s.xml">
-      <configuration name="Level_3.lightTest03" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_06 - 2019.05.29 at 13h 49m 12s.xml">
+      <configuration name="Level_3.level3_06" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest03 - 2019.05.26 at 20h 43m 26s.xml">
-      <configuration name="Level_3.lightTest03" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_05 - 2019.05.29 at 13h 49m 55s.xml">
+      <configuration name="Level_3.level3_05" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest03 - 2019.05.26 at 20h 44m 14s.xml">
-      <configuration name="Level_3.lightTest03" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_05 - 2019.05.29 at 13h 52m 18s.xml">
+      <configuration name="Level_3.level3_05" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest02 - 2019.05.26 at 20h 56m 25s.xml">
-      <configuration name="Level_3.lightTest02" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_05 - 2019.05.29 at 13h 53m 49s.xml">
+      <configuration name="Level_3.level3_05" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 56m 59s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_05 - 2019.05.29 at 13h 55m 28s.xml">
+      <configuration name="Level_3.level3_05" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 58m 37s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_05 - 2019.05.29 at 13h 56m 56s.xml">
+      <configuration name="Level_3.level3_05" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 59m 06s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_05 - 2019.05.29 at 13h 58m 30s.xml">
+      <configuration name="Level_3.level3_05" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 20h 59m 52s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_05 - 2019.05.29 at 14h 00m 25s.xml">
+      <configuration name="Level_3.level3_05" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 21h 01m 05s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_05 - 2019.05.29 at 14h 01m 48s.xml">
+      <configuration name="Level_3.level3_05" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 21h 01m 48s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_05 - 2019.05.29 at 14h 02m 36s.xml">
+      <configuration name="Level_3.level3_05" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 21h 02m 46s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_06 - 2019.05.29 at 14h 03m 33s.xml">
+      <configuration name="Level_3.level3_06" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 21h 04m 01s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_06 - 2019.05.29 at 14h 05m 08s.xml">
+      <configuration name="Level_3.level3_06" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 21h 04m 53s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_06 - 2019.05.29 at 14h 06m 36s.xml">
+      <configuration name="Level_3.level3_06" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 21h 05m 46s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_06 - 2019.05.29 at 14h 07m 24s.xml">
+      <configuration name="Level_3.level3_06" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Level_3_lightTest01 - 2019.05.26 at 21h 06m 40s.xml">
-      <configuration name="Level_3.lightTest01" configurationId="JUnit" />
+    <history-entry file="Level_3_level3_06 - 2019.05.29 at 14h 08m 32s.xml">
+      <configuration name="Level_3.level3_06" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -691,7 +620,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.118791945" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1295302" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -727,7 +656,7 @@
       <window_info anchor="right" id="Maven" order="11" weight="0.3295302" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.11744966" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.12416107" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -736,7 +665,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2407932" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2407932" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -768,16 +697,6 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/renderer/Render.java</url>
-          <line>103</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="triangle" />
@@ -789,434 +708,352 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/elements/SpotLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="58" column="41" lean-forward="true" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#2232#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/primitives/Material.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/geometries/Geometry.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/scene/Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="221" lean-forward="true" selection-start-line="204" selection-end-line="221" />
-          <folding>
-            <element signature="e#0#5552#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/primitives/Tools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#1193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometries/FlatGeometry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometries/test/TriangleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="150" column="16" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא/MiniProject/src/renderer/Render.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#20887#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/Tests/ImageWriterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/elements/SpotLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/primitives/Coordinate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2108">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Ray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="e#1683#1684#0" expanded="true" />
-            <element signature="e#1814#1815#0" expanded="true" />
-            <element signature="e#1841#1842#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="203" selection-start-line="203" selection-end-line="203" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="151" column="16" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Iterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometries/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="259" column="7" lean-forward="true" selection-start-line="259" selection-start-column="7" selection-end-line="259" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometries/RadialGeometry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometries/Quadrangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometries/Plane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="118" column="60" selection-start-line="118" selection-start-column="60" selection-end-line="118" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometries/Intersectable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometries/Sphere.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="159" column="9" lean-forward="true" selection-start-line="159" selection-start-column="9" selection-end-line="159" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scene/Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
-          <folding>
-            <element signature="e#5282#5283#0" expanded="true" />
-            <element signature="e#5323#5324#0" expanded="true" />
-            <element signature="e#5503#5504#0" expanded="true" />
-            <element signature="e#5548#5549#0" expanded="true" />
-            <element signature="e#5715#5716#0" expanded="true" />
-            <element signature="e#5749#5750#0" expanded="true" />
-            <element signature="e#5906#5907#0" expanded="true" />
-            <element signature="e#5947#5948#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding>
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/elements/LightSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/elements/Light.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Tools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Emmission test.jpg">
+    <entry file="file://$PROJECT_DIR$/testPart3_03.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/elements/AmbientLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
-          <folding>
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/sun with 2 builds.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/elements/DirectionalLight.java">
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/primitives/Material.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/elements/PointLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret selection-end-line="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/primitives/Material.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="624">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometries/Geometry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1570#1571#0" expanded="true" />
-            <element signature="e#1603#1604#0" expanded="true" />
-            <element signature="e#1738#1739#0" expanded="true" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#2733#2734#0" expanded="true" />
-            <element signature="e#2768#2769#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - טל ומיכאל/מיני פרויקט java/מיני פרויקט java/src/Renderer/Render.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="128" column="49" lean-forward="true" selection-start-line="126" selection-start-column="4" selection-end-line="128" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/Render.java">
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/primitives/Point2D.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="379" column="16" lean-forward="true" selection-start-line="379" selection-start-column="16" selection-end-line="379" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Tests/RecursiveTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Tests/shadowTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shadow test.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/elements/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/primitives/Point3D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="e#1328#1329#0" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1520#1521#0" expanded="true" />
-          </folding>
+          <caret selection-end-line="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/primitives/Point2D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="e#1107#1108#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1274#1275#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#1600#1601#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="624">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Recursive Test 3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/se5779-01-3121-4448.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - יעקב ונריה/project_camera/src/tests/VectorTest.java">
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/primitives/Point3D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="279" column="1" selection-start-line="279" selection-start-column="1" selection-end-line="281" selection-end-column="51" />
+        <state>
+          <caret selection-end-line="115" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Recursive Test 2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recursive Test 11.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scene 1 lights.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Tests/Level_3.java">
+    <entry file="file://$PROJECT_DIR$/src/primitives/Point3D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="143" column="37" lean-forward="true" selection-start-line="143" selection-start-column="37" selection-end-line="143" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="556">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Ray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/primitives/Ray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/primitives/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/primitives/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="183" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="183" column="1" selection-start-line="183" selection-start-column="1" selection-end-line="183" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Geometries/FlatGeometry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/FlatGeometry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/Geometry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Geometries/Geometry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Geometries/Intersectable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/Intersectable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Geometries/Plane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="118" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/Plane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Geometries/Quadrangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/Quadrangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Geometries/RadialGeometry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/RadialGeometry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-124">
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Geometries/Sphere.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="158" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/Sphere.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Geometries/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="193" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2314">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/Tube.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometries/Cylinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Geometries/Tube.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Geometries/Cylinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elements/AmbientLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Elements/AmbientLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Elements/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elements/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Elements/DirectionalLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elements/DirectionalLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elements/Light.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elements/LightSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Elements/LightSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Elements/Light.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Elements/PointLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="67" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elements/PointLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elements/SpotLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Elements/SpotLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="57" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../שנה ב/סמסטר ב/מיני פרויקט מבוא להנדסת תוכנה/פרויקט לדוגמא - שגידורסקי/Renderer/Render.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="618" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/Render.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-716">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>

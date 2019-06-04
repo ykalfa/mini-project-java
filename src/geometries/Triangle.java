@@ -1,30 +1,29 @@
 package geometries;
 
+import primitives.Point3D;
+import primitives.Ray;
+import primitives.Vector;
+
 import java.util.ArrayList;
 import java.util.List;
-//import java.util.Map;
-import primitives.*;
 
 /**
  * Class Represents Triangle
  * Defined By 3 Points in 3D
- *
- */
-//need to extend from plane ???
-public class Triangle extends Geometry implements FlatGeometry {
+ **/
+public class Triangle extends Geometry implements FlatGeometry, Intersectable {
 
-    //class variables representing the 3 points of triangle//
     private Point3D _p1;    //first point
     private Point3D _p2;    //second point
     private Point3D _p3;    //third point
+
     // ***************** Constructors ********************** //
 
     /**
-     * Default Constractor
-     * create triangle with the points
-     * 1. (1,0,0)
-     * 2. (0,1,0)
-     * 3. (0,0,1)
+     * Default Constructor
+     * p1= (1,0,0)
+     * p2= (0,1,0)
+     * p3= (0,0,1)
      */
     public Triangle() {
         _p1 = new Point3D(1,0,0);
@@ -33,10 +32,7 @@ public class Triangle extends Geometry implements FlatGeometry {
     }
 
     /**
-     * Copy Constractor
-     * Copy the given Triangle Points To this Class Trianlge.
-     *
-     * @param triangle Triangle To Copy
+     * Copy Constructor
      */
     public Triangle(Triangle triangle) {
         _p1 = new Point3D(triangle._p1);
@@ -48,13 +44,7 @@ public class Triangle extends Geometry implements FlatGeometry {
     }
 
     /**
-     * Constractor By 3 Points
-     *Set This Class Triangle Point
-     * By Given Values (p1,p2,p3)
-     *
-     * @param p1
-     * @param p2
-     * @param p3
+     * Constructor By 3 Points
      */
     public Triangle(Point3D p1, Point3D p2, Point3D p3) {
         _p1 = new Point3D(p1);
@@ -68,133 +58,70 @@ public class Triangle extends Geometry implements FlatGeometry {
 //    }
     // ***************** Getters/Setters ********************** //
 
-    /**
-     * Return First Point Of The Triangle
-     *
-     * @return Point3D represents the first point of this triangle
-     */
+
     public Point3D getP1() {
         return _p1;
     }
-
-    /**
-     * Return Second Point Of The Triangle
-     *
-     * @return Point3D represents the second point of this triangle
-     */
     public Point3D getP2() {
         return _p2;
     }
-
-    /**
-     * Return Third Point Of The Triangle
-     *
-     * @return Point3D represents the third point of this triangle
-     */
     public Point3D getP3() {
         return _p3;
     }
 
-    /**
-     * Set First Point Of The Triangle
-     *
-     * @param p1 Point To Set
-     */
     public void setP1(Point3D p1) {
         _p1 = new Point3D(p1);
     }
-
-    /**
-     * Set Second Point Of The Triangle
-     *
-     * @param p2 Point To Set
-     */
     public void setP2(Point3D p2) {
         _p2 = new Point3D(p2);
     }
-
-    /**
-     * Set Third Point Of The Triangle
-     *
-     * @param p3 Point To Set
-     */
     public void setP3(Point3D p3) {
         _p3 = new Point3D(p3);
     }
+
     // ***************** Operations ******************** //
 
     /**
-     * Find intersection Points Of the given ray with the triangle.
-     * Process:
-     * 1. find intersection point with the Plane the triangle is in
-     * 2. create Vectors from the source of the ray to every point of the triangle
-     * 3. create normals from those Vector v1Xv2, v2Xv3, v3Xv1
-     * 4. craete Vector from the intersection point to the ray source
-     * 5. make dot product of the Vector in line 4 with every normal in line 3
-     * 6. if the marks are equal (All minus Or All Plus)
-     *    it meens that the intersection point is in the triangle return it
+     * * FUNCTION
+     * * FindIntersections
+     * * PARAMETERS
+     * * Ray - from the camera
+     * * RETURN
+     * * List<Point3D>  - representing intersection points
+     * * MEANING
+     * Find intersection of the given ray with the triangle
+     * Process - Vars:
+     * P0 - Camera location point
+     * t - the distance between the normal and the cut point
+     * v - the direction of the normal
      *
-     * @param ray Ray to find ontersection with
-     * @return List of intersection points
+     * Process:
+     * 1. find the intersection point with the Plane the triangle is in
+     * 2. create Vectors from P0, to the points of the triangle (T1,T2,T3)
+     * V1 = P1 - P0
+     * V2 = P2 - P0
+     * V3 = P3 - P0
+     * 3. create normals of crossprodact of the vectors
+     * N1 = (V2 X V1)/|V2 X V1|
+     * N2 = (V3 X V2)/|V3 X V2|
+     * N3 = (V3 X V1)/|V3 X V1|
+     * 4. create Vector from the intersection point to the ray source => (P-P0)
+     * 5. dot product between (P-P0) and every normal
+     *  if they all positive or negative then the cutting point is inside the triangle
+     * if sign((P-P0)*N1)==(P-P0)*N2)==(P-P0)*N3)) the return The point
      */
     @Override
     public List<Point3D> FindIntersections(Ray ray) {
-
-      /*  if (getNormal(_p2).length() == 0)
-        {
-            return new ArrayList();
-        }
-        Plane intersectionHelp = new Plane(getNormal(_p2), _p2); // send to plane normal and _p2
-        List<Point3D> ans = intersectionHelp.FindIntersections(ray);
-        if (ans.isEmpty())
-        {
-            return new ArrayList<>();
-        }
-
-        Point3D intersectionPoint3D = ans.get(0);
-
-        Vector n1 = new Vector(ray.getPOO(), _p1).crossProduct(new Vector(ray.getPOO(), _p2));
-        Vector n2 = new Vector(ray.getPOO(), _p2).crossProduct(new Vector(ray.getPOO(), _p3));
-        Vector n3 = new Vector(ray.getPOO(), _p3).crossProduct(new Vector(ray.getPOO(), _p1));
-        try
-        {
-            n1.normalize();
-            n2.normalize();
-            n3.normalize();
-        }
-        catch (Exception e)
-        {
-            return new ArrayList();
-        }
-
-        double d1 = (new Vector(intersectionPoint3D, ray.getPOO())).dotProduct(n1); // ray.getPoo() = P0 , n1 = p
-        double d2 = (new Vector(intersectionPoint3D, ray.getPOO())).dotProduct(n2); // ray.getPoo() = P0 , n2 = p
-        double d3 = (new Vector(intersectionPoint3D, ray.getPOO())).dotProduct(n3); // ray.getPoo() = P0 , n3 = p
-
-        if (!((d1 > 0 && d2 > 0 && d3 > 0) || (d1 < 0 && d2 < 0 && d3 < 0))) // if all of the d are with the same sign add them to the list
-        {
-            ans = new ArrayList();
-
-
-
-
-
-
-        }
-////TODO maybe we need to add the cut poitn to ans ? or just return ans ?
-        return ans;
-        */
 
         if (getNormal(_p2).length() == 0) {
             return new ArrayList();
         }
         Plane t_plane = new Plane(getNormal(_p2), _p2);
         ArrayList<Point3D> answer = (ArrayList<Point3D>) (t_plane.FindIntersections(ray));
-        //TODO  ********** this is my problem in SHADOW TEST, and in recursiveTest 02 ********
         if (answer.isEmpty()) {
             return new ArrayList<>();
         }
-        Point3D P0 = new Point3D(ray.getPOO());
+        Point3D P0 = new Point3D(ray.get_POO());
         Point3D P = answer.get(0);
 
         Vector n1 = new Vector(P0, _p1).crossProduct(new Vector(P0, _p2));
@@ -202,13 +129,9 @@ public class Triangle extends Geometry implements FlatGeometry {
         Vector n3 = new Vector(P0, _p3).crossProduct(new Vector(P0, _p1));
 
         try {
-            n1.normalize();
-            n2.normalize();
-            n3.normalize();
-
-            n1.scale(-1);
-            n2.scale(-1);
-            n3.scale(-1);
+            n1 = n1.normalize().scale(-1);
+            n2 = n2.normalize().scale(-1);
+            n3 = n3.normalize().scale(-1);
         } catch (Exception e) {
             return new ArrayList();
         }
@@ -219,7 +142,7 @@ public class Triangle extends Geometry implements FlatGeometry {
 
         // case the Triangle is on the view plane
         Vector p0_P = new Vector(P0, P);
-        if ((p0_P.getHead().getX().getCoordinate() == p0_P.getHead().getY().getCoordinate()) && (p0_P.getHead().getX().getCoordinate() == p0_P.getHead().getZ().getCoordinate()) && (p0_P.getHead().getX().getCoordinate() == 0)) {
+        if ((p0_P.get_head().get_x().get_coord() == p0_P.get_head().get_y().get_coord()) && (p0_P.get_head().get_x().get_coord() == p0_P.get_head().get_z().get_coord()) && (p0_P.get_head().get_x().get_coord() == 0)) {
 
             boolean has_neg, has_pos;
 
@@ -243,41 +166,28 @@ public class Triangle extends Geometry implements FlatGeometry {
 
     double sign (Point3D p1, Point3D p2, Point3D p3)
     {
-        return (p1.getX().getCoordinate() - p3.getX().getCoordinate()) * (p2.getY().getCoordinate() - p3.getY().getCoordinate()) - (p2.getX().getCoordinate() - p3.getX().getCoordinate()) * (p1.getY().getCoordinate() - p3.getY().getCoordinate());
-
-
+        return (p1.get_x().get_coord() - p3.get_x().get_coord()) * (p2.get_y().get_coord() - p3.get_y().get_coord()) - (p2.get_x().get_coord() - p3.get_x().get_coord()) * (p1.get_y().get_coord() - p3.get_y().get_coord());
     }
+
+
     /**
-     * Return noramal Vector Of Triangle.
-     *
-     * @param point Point To Find Normal
-     * @return Vector represent the Normal in the Given Point
+     * * FUNCTION
+     * * getNormal
+     * * PARAMETERS
+     * * Point - to find normal in plane
+     * * RETURN
+     * * Vector - the same normal for all points in triangle
+     * * MEANING
+     * * returns normal of triangle
      */
-       @Override
-    public Vector getNormal(Point3D point)
-{   Vector normal = (new Vector(_p2, _p1).crossProduct(new Vector(_p3, _p2)));
-// the mistake has that we do _p2,_p1 X _p2,_p3
-    try
-    {
-        normal.normalize();
-        normal.scale(-1);
+    @Override
+    public Vector getNormal(Point3D point) {
+        Vector normal = (new Vector(_p2, _p1).crossProduct(new Vector(_p2, _p3)));
+        try
+        {
+            normal = normal.normalize();
+        }
+        catch (ArithmeticException e) { }
+        return normal;
     }
-    catch (ArithmeticException e) { }
-    return normal;}
-//}
-//           Vector v1 = new Vector(_p2,_p1);//
-//           Vector v2 = new Vector (_p2,_p3);//
-//           Vector normalVector = v1.crossProduct(v2);
-//         //Vector normalVector = (new Vector(_p2, _p1).crossProduct(new Vector(_p2, _p3))); // p2_p1 X p2_p3 = normalVector
-//         try
-//         {
-//             normalVector.normalize();
-//             normalVector.scale(-1);
-//         }
-//         catch (ArithmeticException e)
-//         {
-//
-//         }
-//         return normalVector;
-//       }
 }

@@ -1,3 +1,9 @@
 package geometries;
-import primitives.*;
-public interface FlatGeometry { } // Marker interface
+
+/**
+ * Interface for flat geometries
+ */
+public interface FlatGeometry
+{
+// Marker interface
+}

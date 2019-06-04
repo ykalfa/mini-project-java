@@ -1,20 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package geometries;
+
+import primitives.Point3D;
+import primitives.Ray;
+import primitives.Vector;
 
 import java.util.ArrayList;
 import java.util.List;
-import primitives.*;
-/**
- *
- * @author Yosef and Aviad
- */
-public class Quadrangle extends Geometry implements FlatGeometry{
-    private Triangle _tri1; //frist triangle that is half of the Quadrangle
-    private Triangle _tri2;//second triangle that is half of the Quadrangle
+
+
+public class Quadrangle extends Geometry implements FlatGeometry {
+
+    private Triangle _tri1;  //first triangle
+    private Triangle _tri2; //second triangle
 
 
     public Quadrangle(Point3D P1, Point3D P2, Point3D P3, Point3D P4) {
@@ -35,4 +33,7 @@ public class Quadrangle extends Geometry implements FlatGeometry{
     public Vector getNormal(Point3D point) {
         return _tri1.getNormal(point);
     }
+
+
+
 }

@@ -1,26 +1,21 @@
 package geometries;
+import primitives.Point3D;
+import primitives.Ray;
+import primitives.Vector;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-
-import primitives.*;
 
 /**
- * Class Represents Sphere In 3D.
- * Defined By Radius From Father Class,
- * And Center Point.
- *
+ * Sphere In 3D.
  */
-public class Sphere extends RadialGeometry
+public class Sphere extends RadialGeometry implements Intersectable
 {
-    private Point3D _center;    //Point represent the Sphere Center.
+    private Point3D _center; //the Center.
+
     // ***************** Constructors ********************** //
     /**
-     * Default Constractor
-     * set radius to 1.0
-     * set Center Point to (0,0,0).
-     *
+     * Default Constructor
      */
     public Sphere()
     {
@@ -28,10 +23,7 @@ public class Sphere extends RadialGeometry
         _center=new Point3D();
     }
     /**
-     * Copy Constractor
-     * Set this Class Parameters By the Given Sphere object.
-     *
-     * @param sphere Sphere to Copy
+     * Copy Constructor
      */
     public Sphere (Sphere sphere)
     {
@@ -42,122 +34,126 @@ public class Sphere extends RadialGeometry
         super.setShininess(sphere.getShininess());
     }
     /**
-     * Constractor
-     * Set Class Rdius By Given Double parameter
-     * Set Class Center Point By Given Point3D
-     *
-     * @param radius    Double represents radius size.
-     * @param center    Point3D represents Sphere Center.
+     *  Constructor
      */
     public Sphere(double radius, Point3D center)
     {
         super(radius);
         _center=new Point3D(center);
     }
+
 //        public Sphere(Map<String, String> attributes)
 //	{
 //
 //	}
     // ***************** Getters/Setters ********************** //
-    /**
-     * Get The Center Of the Sphere
-     *
-     * @return Point3D represents the Sphere Center.
-     */
+
     public Point3D getCenter()
     {
         return _center;
     }
-    /**
-     * Set This Sphere Center Point
-     *
-     * @param center Point3D represents the Center of the Sphere.
-     */
     public void setCenter(Point3D center)
     {
         _center=new Point3D(center);
     }
-    // ***************** Operations ******************** //
 
+    // ***************** Operations ******************** //
     /**
-     * Function that return a List of intersection points with given ray
+     * * FUNCTION
+     * * FindIntersections
+     * * PARAMETERS
+     * * Ray - from the camera
+     * * RETURN
+     * * List<Point3D>  - representing intersection points
+     * * MEANING
+     * Find intersection of the given ray with the sphere
+     * Process - Vars:
+     * P0 - Camera location point
+     * t - the distance between the normal and the cut point
+     * v - the direction of the normal
+     * O -  the center
+     * P1,P2 - the cutting point with the sphere
+     * tm - L's projection on the ray
+     * d -distance between tm to the center
+     * th - distance of the ray to the cutting point
+     * t1,t2 - the distance of P0 to the cutting points
      * Process:
-     * 1. create Vector from center point to source Point of the ray
-     * 2. do dot product between this Vector and the ray direction
-     * 3. find the distance between center and the Vector using Pitagoras
-     * 4. if the distance smaller or equal to the radius it meens that there is intersection Point
-     * 5. find half of the length of the Vector that cross the Sphere
-     * 6. reduce from the distance in line 2 the distance in line 5
-     * 7. add the distance in line 6 to the source Point of the ray, this is the first Point
-     * 8. add to the distance in line 2 the distance in line 5
-     * 9. add it to the same source point of the ray
-     * 10. from lines 9+7 we 2 got Point of intersection with the Sphere.
-     *
-     * @param ray Ray object to find intersection with
-     * @return
+     1. create Vector from center point to source Point of the ray => L= O - P0
+     * 2. do dot product between L Vector and the ray direction => tm = L * V
+     * 3. find the distance between center and the Vector using pythagoras => d=(|L|^2 - tm^2)^0.5
+     * 4. if the distance smaller or equal to the radius, d < r , it means that there is intersection Point
+     * 5. find half of the length of the Vector that cross the Sphere => th=(r^2 - d^2)^0.5
+     * 6. t1 = tm-th, t2=tm+th
+     * 7. P1 = P0 +t1*V, P2= P0 + t2*v
      */
     @Override
     public List<Point3D> FindIntersections(Ray ray)
     {
-        Vector lVector=new Vector( ray.getPOO(),_center); // P0 - _center  = L = lvector
+        Point3D P0 = ray.get_POO();
+        Vector V = ray.get_direction();
+        Vector L = new Vector(_center, P0);
         try{
-            ray.getDirection().normalize(); // V
+            V = V.normalize();
         }
         catch(ArithmeticException e)
         {
-
         }
-        double tm=lVector.dotProduct(ray.getDirection());
-        double d=Math.sqrt(Math.pow(lVector.length(), 2)-Math.pow(tm, 2));
-        ArrayList<Point3D> ans=new ArrayList();
+        double tm=L.dotProduct(V);
+        double d=Math.sqrt(Math.pow(L.length(), 2)-Math.pow(tm, 2));
+        ArrayList<Point3D> answer=new ArrayList();
         if(d>_radius)
-            return ans;
-        double th=Math.sqrt(Math.pow(_radius, 2)-Math.pow(d, 2)); //
-        Vector vectorToAdd=new Vector(ray.getDirection());
-        double t1=tm-th; // t1 = p1
-        double t2=tm+th;//t2 = p2
-        Point3D p1=new Point3D(ray.getPOO());
+        {
+            return answer;
+        }
+        double th=Math.sqrt(Math.pow(_radius, 2)-Math.pow(d, 2));
+        Vector tempV =new Vector(V);
+        double t1=tm-th;
+        double t2=tm+th;
+        Point3D p1 = new Point3D(P0);
         if(t1>0)
         {
-            vectorToAdd.scale(t1);
-            p1= p1.add(vectorToAdd);
-            ans.add(p1);
+            tempV = tempV.scale(t1);
+            p1 = p1.add(tempV);
+            answer.add(p1);
         }
         if(t2>0)
         {
-            Point3D p2=new Point3D(ray.getPOO());
-            vectorToAdd.setHead(ray.getDirection().getHead());
-            vectorToAdd.scale(tm+th);
-            p2= p2.add(vectorToAdd);
-            if(p1.compareTo(p2)==-1)
-                ans.add(p2);
+            Point3D p2=new Point3D(P0);
+            tempV.set_head(V.get_head());
+            tempV = tempV.scale(t2);
+            p2 = p2.add(tempV);
+            if(p1.compareTo(p2)== 1)
+                answer.add(p2);
         }
-
-        return ans;
-
+        return answer;
     }
+
     /**
-     * Return The Normal Of the Sphere For Given Point
+     * * FUNCTION
+     * * getNormal
+     * * PARAMETERS
+     * * Point - to find normal in point on the sphere
+     * * RETURN
+     * * Vector - the normal
      * Process:
      * 1. Create Vector From The Center to the Point
      * 2. Normalize The Vector
-     * 3. return The vector.
-     *
-     * @param point Point3D to find Normal to.
-     * @return The Normal For Given Point
+     * 3. scale with -1
+     * 4. return The vector.
      */
     @Override
     public Vector getNormal(Point3D point)
     {
-        Vector ans=new Vector(_center,point);
+        Vector answer = new Vector(_center,point);
         try
         {
-            ans.normalize();
+            answer = answer.normalize();
+            answer = answer.scale(-1);
         }
         catch(ArithmeticException e)
         {
-//            return null;
+            return null;
         }
-        return ans;
+        return answer;
     }
 }
