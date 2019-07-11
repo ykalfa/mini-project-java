@@ -301,14 +301,20 @@ public class Render {
         while(lightIt.hasNext())
         {
             LightSource light=lightIt.next();
-            if(!occluded(light,point,geometry))
-            {
-                difLight = addColors(difLight, calcDiffusiveComp(geometry.getMaterial().get_Kd(), geometry.getNormal(point), light.getL(point), light.getIntensity(point)));
+            double soft = occluded(light,point,geometry);
+ // הסופט שאדו מקבל את הערך ב0 ל1 שאומר כמה הרמה של הסופט , ואז אנחנו מכפילים את הדיפ-לייט ואת הספק-לייט בסופט שאדו
 
-                speLight = addColors(speLight, calcSpecularComp(geometry.getMaterial().get_Ks(), new Vector(point,_scene.getCamera().getP0()),
-                        geometry.getNormal(point), light.getL(point), geometry.getShininess(), light.getIntensity(point)));
-            }
+            difLight = addColors(difLight, calcDiffusiveComp(geometry.getMaterial().get_Kd(), geometry.getNormal(point), light.getL(point), light.getIntensity(point)));
+
+            difLight = multColor(difLight,soft);
+
+            speLight = addColors(speLight, calcSpecularComp(geometry.getMaterial().get_Ks(), new Vector(point,_scene.getCamera().getP0()),
+                    geometry.getNormal(point), light.getL(point), geometry.getShininess(), light.getIntensity(point)));
+
+            speLight = multColor(speLight,soft);
         }
+
+        //TODO: add soft her
 
         Color reflectedLight=new Color(0,0,0);
         Color refractedLight=new Color(0,0,0);
@@ -366,29 +372,98 @@ public class Render {
      *    and the geometry is'nt included(if flat) return true
      * 4. else return false
      */
-    private boolean occluded(LightSource light, Point3D point, Geometry geometry)
-    {
-        Vector lightDirection = light.getL(point);
+    private float occluded(LightSource light, Point3D point, Geometry geometry){
+        float k = 0;
+        Vector lightDirection = light.getL(point).normalize();
         lightDirection = lightDirection.scale(-1);
         Point3D geometryPoint = new Point3D(point);
         Vector epsVector = new Vector(geometry.getNormal(point));
         epsVector = epsVector.scale(2);
         geometryPoint = geometryPoint.add(epsVector);
+        Ray[] rays = new Ray[20];
+        rays[0] = new Ray(geometryPoint, lightDirection);
+        rays[1] = new Ray(geometryPoint, lightDirection.add(new Vector(0,0,0.025)));
+        rays[2] = new Ray(geometryPoint, lightDirection.subtract(new Vector(0,0,0.025)));
+        rays[3] = new Ray(geometryPoint, lightDirection.add(new Vector(0,0,0.05)));
+        rays[4] = new Ray(geometryPoint, lightDirection.subtract(new Vector(0,0,0.05)));
+        rays[5] = new Ray(geometryPoint, lightDirection.add(new Vector(0,0,0.075)));
+        rays[6] = new Ray(geometryPoint, lightDirection.subtract(new Vector(0,0,0.075)));
+        rays[7] = new Ray(geometryPoint, lightDirection.add(new Vector(0,0,0.1)));
+        rays[8] = new Ray(geometryPoint, lightDirection.subtract(new Vector(0,0,0.1)));
+        rays[9] = new Ray(geometryPoint, lightDirection.add(new Vector(0,0,0.125)));
+        rays[10] = new Ray(geometryPoint, lightDirection.subtract(new Vector(0,0,0.125)));
+        rays[11] = new Ray(geometryPoint, lightDirection.add(new Vector(0,0,0.15)));
+        rays[12] = new Ray(geometryPoint, lightDirection.subtract(new Vector(0,0,0.15)));
+        rays[13] = new Ray(geometryPoint, lightDirection.add(new Vector(0,0,0.175)));
+        rays[14] = new Ray(geometryPoint, lightDirection.subtract(new Vector(0,0,0.175)));
+        rays[15] = new Ray(geometryPoint, lightDirection.add(new Vector(0,0,0.2)));
+        rays[16] = new Ray(geometryPoint, lightDirection.subtract(new Vector(0,0,0.2)));
+        rays[17] = new Ray(geometryPoint, lightDirection.add(new Vector(0,0,0.225)));
+        rays[18] = new Ray(geometryPoint, lightDirection.subtract(new Vector(0,0,0.225)));
+        rays[19] = new Ray(geometryPoint, lightDirection.add(new Vector(0,0,0.25)));
 
-        Ray lightRay = new Ray(geometryPoint, lightDirection);
-        Map<Geometry, List<Point3D>> intersectionPoints = getSceneRayIntersections(lightRay);
-        // Flat Geometry cannot self intersect
-        if (geometry instanceof FlatGeometry) {
-            intersectionPoints.remove(geometry);
-        }
 
-        for (Entry<Geometry, List<Point3D>> entry : intersectionPoints.entrySet()) {
-            if (entry.getKey().getMaterial().get_Kt() == 0 ) {
-                return true;
+
+        //if for run until 20 so we get SoftShadow, if for run until 1 so we get shadow without soft
+        for (int i = 0; i < 1; i++){
+            Map<Geometry, List<Point3D>> intersectionPoints = getSceneRayIntersections(rays[i]);
+            // Flat geometry cannot self intersect
+            if (geometry instanceof FlatGeometry){
+                intersectionPoints.remove(geometry);
+            }
+            if(intersectionPoints.isEmpty()) {
+           //    k += 0.05; //with soft shadow
+                k+=1;  // without soft shadow
             }
         }
-        return false;
+
+        return k;
     }
+
+
+//    private double occluded(LightSource light, Point3D point, Geometry geometry)
+//    {
+//        double occ = 0;
+//        Vector lightDirection = light.getL(point);
+//        lightDirection = lightDirection.scale(-1);
+//        Point3D geometryPoint = new Point3D(point);
+//        Vector epsVector = new Vector(geometry.getNormal(point));
+//        epsVector = epsVector.scale(2);
+//        geometryPoint = geometryPoint.add(epsVector);
+///*
+//* עד עכשיו היה קרן אחת , מהגאומטריה לכיוון האור , עכשיו אני בנקודה כלשהי אני לא אשלח רק קרן אחת אל התאורה אלא אשלח כמה קרניים עם הטיות קטנות ואז יהיה לי צל מעורב בתאורה.
+//ואז כל פעם שאני רואה שאין חיתוך של הקרן עם הגאומטריה , אז אני מוסיף 1 חלקי כמות הקרניים למשתנה OCC  . אם כל האובייקטים היו מוסתרים אז האוקלודד שווה ל0
+//* */
+//        Ray[] rays = new Ray[10];
+//        rays[0] = new Ray(geometryPoint, lightDirection); //This is the real ray that go to the point
+//        rays[1] = new Ray(geometryPoint, lightDirection.add(new Vector(0.160,0.160,0.160)));
+//        rays[2] = new Ray(geometryPoint, lightDirection.add(new Vector(0.170,0.170,0.170)));
+//        rays[3] = new Ray(geometryPoint, lightDirection.add(new Vector(0.180,0.180,0.180)));
+//        rays[4] = new Ray(geometryPoint, lightDirection.add(new Vector(0.190,0.190,0.190)));
+//        rays[5] = new Ray(geometryPoint, lightDirection.add(new Vector(0.200,0.200,0.200)));
+//        rays[6] = new Ray(geometryPoint, lightDirection.add(new Vector(0.210,0.210,0.210)));
+//        rays[7] = new Ray(geometryPoint, lightDirection.add(new Vector(0.220,0.220,0.220)));
+//        rays[8] = new Ray(geometryPoint, lightDirection.add(new Vector(0.230,0.230,0.230)));
+//        rays[9] = new Ray(geometryPoint, lightDirection.add(new Vector(0.240,0.240,0.240)));
+//
+//        for (int i = 0; i<10; i++) {
+//            Map<Geometry, List<Point3D>> intersectionPoints = getSceneRayIntersections(rays[i]);
+//            // Flat Geometry cannot self intersect
+//            if (geometry instanceof FlatGeometry) {
+//                intersectionPoints.remove(geometry);
+//            }
+//
+//            if(intersectionPoints.isEmpty()){
+//                occ+=0.1;
+//            }
+////            for (Entry<Geometry, List<Point3D>> entry : intersectionPoints.entrySet()) {
+////                if (entry.getKey().getMaterial().get_Kt() == 0) {
+////                    occ +=0.1;
+////                }
+////            }
+//        }
+//        return occ;
+//    }
 
     /**
      * * FUNCTION
@@ -615,5 +690,16 @@ public class Render {
 
         return ans.entrySet().iterator().next();
     }
+    private Color multColor(Color c, double mekadem){
 
+        int r = (int)(mekadem*c.getRed());
+        int g = (int)(mekadem*c.getGreen());
+        int b = (int)(mekadem*c.getBlue());
+
+        r = (r > 0) ? r : 0;
+        g = (g > 0) ? g : 0;
+        b = (b > 0) ? b : 0;
+
+        return new Color(r <= 255 ? r : 255, g <= 255 ? g : 255, b <= 255 ? b : 255);
+    }
 }
